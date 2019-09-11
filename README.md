@@ -1,8 +1,6 @@
-# gavinjruane.github.io
+# learning resources
 
-hi, my loyal fans. i am creating a website. bye! or else...
-
-## so what r u lookin at?
+hi there. i post homework assignments and class notes. i do not post answers...hehe. 
 
 hey if u want to see my spanish notes or something, find what u want below
 
