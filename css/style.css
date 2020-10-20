@@ -156,6 +156,15 @@ img.example {
     color: blue;
 }
 
+.example-step {
+    margin-top: 15px;
+    color: #666;
+}
+
+ol.instructions {
+    padding-left: 15px;
+}
+
 #site-title {
     display: inline-block;
     padding-right: 20px;
