@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>
+        
+            One-sided limits | gruane
+      
+    </title>
+    <meta name="description" content="
+     my fun website
+    ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/apache.css">
+    <link rel="stylesheet" href="../../assets/css/github-syntax.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header id="header">
+        <div id= post-title>
+            <h1>One-sided limits</h1>
+        </div>
+    </header>
+
+    <hr/>
+
+    <div class="apache-nav">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img src="../../images/icons/back.png"/>
+                    <a href="../../index.html">Back</a>
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/folder.png"/>
+                    calculus
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    One-sided limits
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div class="post-container">
+      <article id = "post">
+        <h3>Key ideas</h3>
+        <h4 style="text-align: center;"><em>The limit rule</em></h4>
+        <p style="text-align: center;">The \(\lim\limits_{x \to a}f(x)\) exists if \(\lim\limits_{x \to a^-}f(x)\) is equal to \(\lim\limits_{x \to a^+}f(x)\)</p>
+        <p style="text-align: center;">Else, \(\lim\limits_{x \to a}f(x)\) does not exist.</p>
+        <ul>
+            <li><strong>A limit from the right: </strong>\(\lim\limits_{x \to a^+}f(x)\) (positive)</li>
+            <li><strong>A limit from the left: </strong>\(\lim\limits_{x \to a^-}f(x)\) (negative)</li>
+            <li>\(f(a)\) is the y-value where \(x=a\)</li>
+        </ul>
+        <h3>Steps for evaluating a one-sided limit <em>using a graph</em>:</h3>
+        <ol>
+            <li>Go to the coordinate \((x \to a)\) in the direction of the limit. For example, if the limit is \((x \to a^-\), go to the left.</li>
+            <li>See what y-coordinate it approaches.</li>
+            <li>If both the limits from the left and right are equal, the "normal" limit is the answer.</li>
+            <li>If you see \(g(a)\): what y-coordinate is at \(x=a\)?</li>
+        </ol>
+        <h4 style="text-align: center;"><em>When to use one-sided limit rule</em></h4>
+        <p style="text-align: center;">\(\displaystyle{\lim\limits_{x \to a^{\pm}}f(x)=\frac{\text{non-}0}{0}}\)</p>
+        <h3>Steps for evaluating a one-sided limit <em>using calculus</em>:</h3>
+        <ol>
+            <li>Substitute into the limit.</li>
+            <li><strong>If you get a non-zero over a zero: </strong>find a number close to \(x \to a\) (go up or down 0.1 depending on direction of limit) and substitute that number <em>into the denominator</em>.</li>
+            <li>Divide the numerator by the denominator, and see if the result is positive or negative.</li>
+            <ol>
+                <li><strong>If positive: </strong>the answer is \(+\infty\).</li>
+                <li><strong>If negative: </strong>the answer is \(-\infty\)</li>
+            </ol>
+        </ol>
+        <!-- <h3>Using L'hopital's rule</h3>
+        <p>In this problem, you would need to use L'hopital's rule because you would receive a zero over zero.</p>
+        <p>\(\displaystyle{\lim\limits_{x \to -1}\frac{x^2+7x+6}{x^2+3x+2}}\)</p>
+            \[\begin{align}
+                &=\frac{(-1)^2+7(-1)+6}{(-1)^2+3(-1)+2} \\
+                &=\frac{0}{0}
+            \end{align}\] -->
+
+        <h3>Sample problems</h3>
+        <ol>
+            <li>\(\displaystyle{\lim\limits_{x \to 4^-}\frac{x^2+2}{4-x}}\)</li>
+            \[\begin{align}
+            &=\frac{(4)^2+2}{4-(4)} \\
+            &=\frac{18}{0}
+            \end{align}\]
+            <p>Now, we will have to find a number very close to 4 to the left. This is because the sign on the limit is <em>negative</em>. We'll solve this problem by inputting that number into the <em>denominator only</em>. We can choose 3.9 as our number because it is a number close to 4 that is to the left of it.</p>
+            \[\begin{align}
+            &=4-(3.9) \\
+            &=+1.9 \\
+            &=\frac{18}{+} \\
+            &=+\infty
+            \end{align}\]
+
+            <li>\(\displaystyle{\lim\limits_{x \to -1^+}\frac{x+8}{x+1}}\)</li>
+            \[\begin{align}
+            &=\frac{(-1)+8}{(-1)+1} \\
+            &=\frac{7}{0}
+            \end{align}\]
+            <p>We have the same problem again&mdash;the result was a non-zero over zero. So, we'll have to follow our steps again. We can choose -0.9 as our number because it is a number close to -1 that is to the right of it.</p>
+            \[\begin{align}
+            &=(-0.9)+1 \\
+            &=0.1 \\
+            &=\frac{7}{+} \\
+            &=+\infty
+            \end{align}\]
+
+            <li>\(\displaystyle{\lim\limits_{x \to 4^+}\frac{3x}{x^2-16}}\)</li>
+            \[\begin{align}
+            &=\frac{3(4)}{(4)^2-16} \\
+            &=\frac{12}{0} \\
+            &=((4.1)^2-16) \\
+            &=0.81 \\
+            &=\frac{12}{+} \\
+            &=+\infty
+            \end{align}\]
+            <p>Now, let's take a look at the same limit (basically) but from the left this time.</p>
+            <p>\(\displaystyle{\lim\limits_{x \to 4^-}\frac{3x}{x^2-16}}\)</p>
+            \[\begin{align}
+            &=\frac{3(4)}{(4)^2-16} \\
+            &=\frac{12}{0} \\
+            &=((3.9)^2-16) \\
+            &=-0.79 \\
+            &=\frac{12}{-} \\
+            &=-\infty
+            \end{align}\]
+        </ol>
+      </article>
+    </div>
+
+    <h5>Site style derived from <a href="https://brokenco.de/">rtyler</a></h5>
+    <h5>Calculus problems and notes derived from <a href="https://kquattrin.com/">Dr. Kevin Quattrin, EdD</a></h5>
+    <h5>Some problems and examples derived from Mr. Charles Stanley.</h5>
+
+    
+  </div><footer class= "footer">
+</footer>
+
+</body>
+</html>
