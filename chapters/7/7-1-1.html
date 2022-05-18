@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>
+        
+            Limits with "h" | gruane
+      
+    </title>
+    <meta name="description" content="
+     my fun website
+    ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/apache.css">
+    <link rel="stylesheet" href="../../assets/css/github-syntax.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header id="header">
+        <div id= post-title>
+            <h1>Limits with "h"</h1>
+        </div>
+    </header>
+
+    <hr/>
+
+    <div class="apache-nav">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img src="../../images/icons/back.png"/>
+                    <a href="../../index.html">Back</a>
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/folder.png"/>
+                    calculus
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    <a href="./7-1.html">L'hopital's rule</a>
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    Limits with "h"
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div class="post-container">
+      <article id = "post">
+        <h3>Key ideas</h3>
+        <h4 style="text-align: center;"><em>The limit definition</em></h4>
+        <p style="text-align: center;">Given \(f(x)\), then \(f'(x)=\lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h}\).</p>
+        <ul>
+            <li>\(H\) represents the difference between two ppints</li>
+            <li>If you see an \(h\), find the derivative of the limit's function.</li>
+        </ul>
+        <h3>Steps for evaluating a limit with \(h\):</h3>
+        <ol>
+            <li>Change any instance of \((x+h)\) or \((a+h)\) to \(x\).</li>
+            <li>Find the derivative of these changed terms in the function. Don't include the rest of the function in your derivative work.</li>
+            <li><strong>If the original term was not \((x+h)\) and had a constant \((a+h)\):</strong> substitute that constant in for \(x\) and solve.</li>
+        </ol>
+        <!-- <h3>Using L'hopital's rule</h3>
+        <p>In this problem, you would need to use L'hopital's rule because you would receive a zero over zero.</p>
+        <p>\(\displaystyle{\lim\limits_{x \to -1}\frac{x^2+7x+6}{x^2+3x+2}}\)</p>
+            \[\begin{align}
+                &=\frac{(-1)^2+7(-1)+6}{(-1)^2+3(-1)+2} \\
+                &=\frac{0}{0}
+            \end{align}\] -->
+
+        <h3>Sample problems</h3>
+
+        <ol>
+            <li>\(\displaystyle{\lim\limits_{h \to 0}\frac{3(x+h)^2-5(x+h)-3x^2+5x}{h}}\)</li>
+            \[\begin{align}
+            \frac{dy}{dx}&=3(x)^2-5(x) \\
+            &=6x=5
+            \end{align}\]
+            <p>See how we changed the terms \(3(x+h)^2\) and \(-5(x+h)\) and then took the derivative of those changed forms? That's what you'll need to do for these problems.</p>
+
+            <li>\(\displaystyle{\lim\limits_{h \to 0}\frac{4(2+h)^2-3(2+h)+18}{h}}\)</li>
+            \[\begin{align}
+            \frac{dy}{dx}&=4(x)^2-3(x) \\
+            &=8x-3
+            \end{align}\]
+            <p>That's great, but we need to substitute in the constant now.</p>
+            \[\begin{align}
+            &=8(2)-3 \\
+            &=13
+            \end{align}\]
+
+            <li>\(\displaystyle{\lim\limits_{h \to 0}\frac{4(x+h)^{-1}+\sin (x+h)-4x^{-1}-\sin x}{h}}\)</li>
+            \[\begin{align}
+            \frac{dy}{dx}&=4(x)^{-1}+\sin (x) \\
+            &=-4x^{-2}+\cos x
+            \end{align}\]
+        </ol>
+      </article>
+    </div>
+
+    
+
+    
+  </div><footer class= "footer">
+</footer>
+
+</body>
+</html>

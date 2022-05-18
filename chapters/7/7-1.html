@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>
+        
+            L'hopital's rule | gruane
+      
+    </title>
+    <meta name="description" content="
+     my fun website
+    ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/apache.css">
+    <link rel="stylesheet" href="../../assets/css/github-syntax.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header id="header">
+        <div id= post-title>
+            <h1>L'hopital's rule</h1>
+        </div>
+    </header>
+
+    <hr/>
+
+    <div class="apache-nav">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img src="../../images/icons/back.png"/>
+                    <a href="../../index.html">Back</a>
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/folder.png"/>
+                    calculus
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    L'hopital's rule
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    <a href="./7-1-1.html">Limits with "h"</a>
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div class="post-container">
+      <article id = "post">
+        <h3>Key ideas</h3>
+        <h4 style="text-align: center;"><em>Fundamental idea</em></h4>
+        \[\lim_{x \to a}f(x)=L\]
+        <p style="text-align: center;">The <em>limit</em> as \(x\) approaches \(a\) on \(f(x)\) is \(L\).</p>
+        <ul>
+            <li>Can exist and can be or cannot be reached</li>
+            <li>A zero over zero (\(\frac{0}{0}\)) will require the usage of L'hopital'
+            s rule.</li>
+        </ul>
+        <h3>Steps for evaluating a L'hopital's rule problem:</h3>
+        <ol>
+            <li>Substitute the given \(x\) value into the limit problem and see if it results in a non-zero answer.</li>
+            <li><strong>If the result is a non-zero answer: </strong> the number is the answer to the problem.</li>
+            <li><strong>If the result is \(\frac{0}{0}\):</strong> take the derivative of the numerator and then the denominator. Do not use the quotient rule.</li>
+            <ol>
+                <li>Re-substitute the given \(x\) value into the function. Repeat these steps as many times as necessary.</li>
+            </ol>
+        </ol>
+        <!-- <h3>Using L'hopital's rule</h3>
+        <p>In this problem, you would need to use L'hopital's rule because you would receive a zero over zero.</p>
+        <p>\(\displaystyle{\lim\limits_{x \to -1}\frac{x^2+7x+6}{x^2+3x+2}}\)</p>
+            \[\begin{align}
+                &=\frac{(-1)^2+7(-1)+6}{(-1)^2+3(-1)+2} \\
+                &=\frac{0}{0}
+            \end{align}\] -->
+
+        <h3>Sample problems</h3>
+
+        <ol>
+            <li>\(\displaystyle{\lim\limits_{x \to 0}\frac{\sin x}{x}}\)</li>
+            \[\begin{align}
+            &=\frac{\sin 0}{0} \\
+            &=\frac{0}{0}
+            \end{align}\]
+            <p>We got a \(\frac{0}{0}\). We'll need to use L'hopital's rule to solve the rest of this problem.</p>
+            \[\begin{align}
+            f'(x)&=\frac{-\cos x}{1} \\
+            &=\frac{-\cos 0}{1} \\
+            &=1
+            \end{align}\]
+
+            <li>\(\displaystyle{\lim\limits_{x \to 2}\frac{1-e^{x-2}}{x^2-4}}\)</li>
+            \[\begin{align}
+            &=\frac{1-e^{2-2}}{2^2-4} \\
+            &=\frac{0}{0}
+            \end{align}\]
+            <p>We got a \(\frac{0}{0}\). We'll need to use L'hopital's rule to solve the rest of this problem.</p>
+            \[\begin{align}
+            f'(x)&=\frac{-e^{x-2}\times 1}{2x} \\
+            &=-\frac{1}{4}
+            \end{align}\]
+
+            <li>\(\displaystyle{\lim\limits_{x \to-3}\frac{x^2+6x+1}{x^2+9}}\)</li>
+            \[\begin{align}
+            &=-\frac{8}{18} \\
+            &=-\frac{4}{9}
+            \end{align}\]
+            <p>This limit was all good without L'hopital's rule, so it was as simple as substituting and simplifying.</p>
+
+            <li>\(\displaystyle{\lim\limits_{x \to 2}\frac{x^2+4x+4}{x^3-x^2-8x+12}}\)</li>
+            \[\begin{align}
+            &=\frac{(2)^2+4(2)+4}{(2)^3-(2)^2-8(2)+12} \\
+            &=\frac{0}{0}
+            \end{align}\]
+            <p>We got a \(\frac{0}{0}\). We'll need to use L'hopital's rule to solve the rest of this problem.</p>
+            \[\begin{align}
+            f'(x)&=\frac{2x-4}{3x^2-2x-8} \\
+            &=\frac{2(2)-4}{3(2)^2-2(2)-8} \\
+            &=\frac{0}{0}
+            \end{align}\]
+            <p>Oh no...\(\frac{0}{0}\) again! Try L'hopital's rule yet again.</p>
+            \[\begin{align}
+            f''(x)&=\frac{2}{6x-2} \\
+            &=\frac{2}{6(2)-2} \\
+            &=\frac{1}{4}
+            \end{align}\]
+        </ol>
+      </article>
+    </div>
+
+    
+
+    
+  </div><footer class= "footer">
+</footer>
+
+</body>
+</html>
