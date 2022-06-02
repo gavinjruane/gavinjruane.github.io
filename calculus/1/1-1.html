@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>
+        
+            Transcendentals and derivatives | gruane
+      
+    </title>
+    <meta name="description" content="
+     my fun website
+    ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/apache.css">
+    <link rel="stylesheet" href="../../assets/css/github-syntax.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header id="header">
+        <div id= post-title>
+            <h1>Transcendentals and derivatives</h1>
+        </div>
+    </header>
+
+    <hr/>
+
+    <div class="apache-nav">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img src="../../images/icons/back.png"/>
+                    <a href="../chapters.html">Back</a>
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/folder.png"/>
+                    calculus
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    Transcendentals and derivatives
+                <td>
+                <td>
+                    <span style="float:right;">
+                    18 May 2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div class="post-container">
+      <article id = "post">
+        <h3>Key ideas</h3>
+        <h4 style="text-align: center;"><em>Trigonometric rules</em></h4>
+        \[\begin{align}
+        \frac{d}{dx}[\sin u]&=(\cos u)\frac{du}{dx} \\
+        \frac{d}{dx}[\cos u]&=(-\sin u)\frac{du}{dx} \\
+        \frac{d}{dx}[\tan u]&=(\sec ^2 u)\frac{du}{dx} \\
+        \frac{d}{dx}[\csc u]&=(-\csc u \cot u)\frac{du}{dx} \\
+        \frac{d}{dx}[\sec u]&=(\sec u \tan u)\frac{du}{dx} \\
+        \frac{d}{dx}[\cot u]&=(-\csc ^2 u)\frac{du}{dx}
+        \end{align}\]
+        <h4 style="text-align: center;"><em>Logarithmic rules</em></h4>
+        \[\begin{align}
+        \frac{d}{dx}[\ln u]&=(\frac{1}{u})\frac{du}{dx} \\
+        \frac{d}{dx}[\log _a u]&=(\frac{1}{u\times \ln a})\frac{du}{dx} \\
+        \end{align}\]
+        <ul>
+            <li>The derivative is the slope.</li>
+            <li>The rules are essential to understanding different types of derivatives.</li>
+        </ul>
+
+        <h3>Sample problems</h3>
+
+        <ol>
+            <li>\(\displaystyle{\frac{d}{dx}(\sin^3 x)}\)</li>
+            \[\begin{align}
+            &=\frac{d}{dx}(\sin x)^3 \\
+            \frac{dy}{dx}&=3(\sin x)^2 \times (\cos x)
+            \end{align}\]
+
+            <li>\(\displaystyle{\frac{d}{dx}(\sin x^3)}\)</li>
+            \[\begin{align}
+            \frac{dy}{dx}&=-\cos (x^3)\times 3x^2
+            \end{align}\]
+
+            <li>\(\displaystyle{\frac{d}{dx}(\ln 4x^2)}\)</li>
+            \[\begin{align}
+            \frac{dy}{dx}&=\frac{1}{4x^2}(8x) \\
+            &=\frac{2}{x}
+            \end{align}\]
+
+            <li>\(\displaystyle{f(x)=\sqrt[5]{\ln x}}\)</li>
+            \[\begin{align}
+            &=(\ln x)^{\frac{1}{5}} \\
+            f'(x)&=\frac{1}{5}(\ln x)^{-\frac{4}{5}}\times\frac{1}{x}\times 1 \\
+            &=\frac{1}{5x(\ln x)^{\frac{4}{5}}}
+            \end{align}\]
+        </ol>
+      </article>
+    </div>
+
+    <h5>Site style derived from <a href="https://brokenco.de/">rtyler</a></h5>
+<h5>Calculus problems and notes derived from <a href="https://kquattrin.com/">Dr. Kevin Quattrin, EdD</a></h5>
+<h5>Some problems and examples derived from Mr. Charles Stanley.</h5>
+
+    
+  </div><footer class= "footer">
+</footer>
+
+</body>
+</html>

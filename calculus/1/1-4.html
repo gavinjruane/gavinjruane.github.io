@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>
+        
+            Quotient rule | gruane
+      
+    </title>
+    <meta name="description" content="
+     my fun website
+    ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/apache.css">
+    <link rel="stylesheet" href="../../assets/css/github-syntax.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header id="header">
+        <div id= post-title>
+            <h1>Quotient rule</h1>
+        </div>
+    </header>
+
+    <hr/>
+
+    <div class="apache-nav">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img src="../../images/icons/back.png"/>
+                    <a href="../chapters.html">Back</a>
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/folder.png"/>
+                    calculus
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    Quotient rule
+                <td>
+                <td>
+                    <span style="float:right;">
+                    21 May 2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div class="post-container">
+      <article id = "post">
+        <h3>Key ideas</h3>
+        <h4 style="text-align: center;"><em>Quotient rule</em></h4>
+        \[\begin{align}
+        \frac{d}{dx}\left[\frac{u}{v}\right]=\frac{v\cdot\frac{du}{dx}-u\cdot\frac{dv}{dx}}{v^2}
+        \end{align}\]
+        <ul>
+            <li>Check for points of exclusion before using the quotient rule, and if there are any, remove them.</li>
+            <li>Simplify the overall function if you can before using the steps for the quotient rule.</li>
+        </ul>
+        <h3>Steps for using the quotient rule:</h3>
+        <ol>
+            <li>Identify if there is a quotient between two functions and if there is, label \(U\) and \(V\).</li>
+            <li>Find and simplify the derivatives of \(U\) and \(V\).</li>
+            <li>Substitute in all values and terms.</li>
+            <li>Simplify the derivative using various techniques like common factors, common denominators, reduing, etc. </li>
+        </ol>
+
+        <h3>Sample problems</h3>
+
+        <ol>
+            <li>\(\displaystyle{\frac{d}{dx}\left[\frac{6x}{x^2+4}\right]}\)</li>
+            <p style="text-align: center;">Finding individual derivatives</p>
+            \[\begin{align}
+            u&=6x\to 6 \\
+            v&=x^2+4\to 2x
+            \end{align}\]
+            <p style="text-align: center;">Placing parts together</p>
+            \[\begin{align}
+            \frac{dy}{dx}&=\frac{(x^2+4)(6)-(6x)(2x)}{(x^2+4)^2} \\
+            &=\frac{6x^2+24-12x^2}{(x^2+4)^2} \\
+            &=\frac{24-6x^2}{(x^2+4)^2}
+            \end{align}\]
+        </ol>
+      </article>
+    </div>
+
+    <h5>Site style derived from <a href="https://brokenco.de/">rtyler</a></h5>
+<h5>Calculus problems and notes derived from <a href="https://kquattrin.com/">Dr. Kevin Quattrin, EdD</a></h5>
+<h5>Some problems and examples derived from Mr. Charles Stanley.</h5>
+
+    
+  </div><footer class= "footer">
+</footer>
+
+</body>
+</html>
