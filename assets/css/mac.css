@@ -3,12 +3,30 @@
 	src: url("../fonts/Chicago.ttf");
 }
 body {
+	min-width: 820px;
 	font-family: "Chicago";
 	margin: 25px;
 	display: flex;
 	flex-direction: column;
 	background-color: black;
-	width: 1000px;
+}
+.column-manager {
+	display: flex;
+	flex-direction: column;
+}
+.left-side-container {
+	width: 1075px;
+	overflow: none;
+	margin-right: 20px;
+	align-self: left;
+	flex-basis: 700px;
+}
+.right-side-container {
+	color: white;
+	width: 100%;
+}
+a.right-side-container {
+	color: white;
 }
 .main-container {
 	border-radius: 20px 20px 0px 0px;
@@ -29,9 +47,6 @@ body {
 	position: relative;
 	width: 100%;
 	height: 45px;
-}
-.main-container {
-	width: 100%;
 }
 .elements {
 	width: 75%;
@@ -59,85 +74,83 @@ body {
 }
 .desktop {
 	padding: 20px;
+	display: flex;
+	flex-direction: row;
 }
 .window1 {
-	width: 700px;
+	width: 828px;
+	min-width: 600px;
 	height: 500px;
 	background-color: white;
-	position: absolute;
+	/*position: absolute;*/
 	border: 1px solid black;
 	box-shadow: 3px 3px;
 }
 .title-bar {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
 	height: 40px;
-	width: 100%;
 	background-color: white;
+	padding-left: 3px;
 }
 .title-bar-line {
-	border: 1px solid black;
+	border: 0.8px solid black;
 }
-p.title {
+p.window-title {
 	color: black;
-	position: absolute;
-	margin: 0 auto;
 	text-align: center;
-	top: 6px;
 	font-size: 14pt;
 }
 .close {
-	position: absolute;
-	top: 8px;
-	left: 20px;
 	width: 20px;
 	height: 20px;
-	border: 1px solid black;
+	border: 1.6px solid black;
 }
 .other-button {
-	position: absolute;
-	top: 8px;
-	right: 20px;
 	width: 20px;
 	height: 20px;
-	border: 1px solid black;
+	border: 1.6px solid black;
 }
 .internal-square {
-	position: absolute;
+	/*position: absolute;*/
 	width: 10px;
 	height: 10px;
-	border: 1px solid black;
+	border: 1.6px solid black;
 }
-
-.button-selector1 {
-	width: 42.5%;
+.window-title {
+	/*width: 15%;*/
+	/*background-color: white;*/
+	margin-left: 3px;
+	margin-right: 3px;
 }
-.button-selector2 {
-	width: 42.5%;
-}
-.title {
-	width: 15%;
-	background-color: white;
-}
-
 .small-line {
 	width: 12px;
-	position: absolute;
 	top: 8px;
 	border: 1px solid black;
-	display: flex;
-	flex-direction: column;
 	height: 0px;
 }
-.small-lines1 {
-	position: absolute;
-	left: 1px;
+.middle-line {
+	width: 315px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
 }
-.small-lines2 {
-	position: absolute;
-	left: 684px;
+.not-lower {
+	margin-bottom: 3px;
 }
-.large-line {
+.line-collection {
+	margin-right: 3px;
+}
+.line-collection2 {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+/*.small-lines2 {
+	position: absolute;
+}*/
+/*.large-line {
 	width: 86.5%;
 	position: absolute;
 	top: 8px;
@@ -146,15 +159,11 @@ p.title {
 	display: flex;
 	flex-direction: column;
 	height: 0px;
-}
-.desktop {
-	display: flex;
-	flex-direction: row;
-}
+}*/
 .icons {
 	display: flex;
 	flex-direction: column;
-	position: absolute;
+	/*position: absolute;*/
 	left: 945px;
 	justify-content: center;
 }
@@ -168,7 +177,9 @@ p.title {
 }
 
 .content {
+	margin-left: 20px;
 	display: flex;
+	flex-direction: column;
 }
 .icon-img {
 	width: 40px;
@@ -198,3 +209,43 @@ p.title {
 #special {
 	padding-left: 15px;
 }*/
+
+/*Blog posts*/
+
+p.content {
+	margin-top: 0px;
+	margin-left: 0;
+	margin-right: 20px;
+}
+h3.content {
+	margin-top: 0px;
+	margin-left: 0;
+}
+h1.content {
+	margin-top: 20px;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+.image-text {
+	display: flex;
+	flex-direction: row;
+}
+img.image-text {
+	width: 30%;
+}
+
+p.image-text {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 70%;
+}
+.scrollable {
+	overflow-y: scroll;
+	height: 90%;
+}
+/*p.content, p.image-text {
+	font-family: sans-serif;
+}*/
+#image-of-brody {
+	min-width: 200px;
+}
