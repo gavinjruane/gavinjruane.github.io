@@ -3,6 +3,10 @@
 	<head>
 		<link rel="stylesheet" href="./assets/css/mac.css">
 		<title>Why would anyone eat at Subway? | 10-12-22</title>
+
+		<!--MathJax-->
+    	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body>
 	  <div class="column-manager">
@@ -10,8 +14,13 @@
 		      <div class="main-container">
 			      <div class="menu-bar">
 				      <div class="elements">
-					      <p id="apple" class="element">:)</p>
-					      <a class="menu-bar-link" href="./blog/101222-subway.html"><p id="file" class="element">File</p></a>
+					      <a class="menu-item" href=""><p id="apple" class="element">:)</p></a>
+					      <p id="file" class="element">File</p>
+					      <div id="file-dropdown">
+					      	<a class="menu-item" href="./blog/101222-subway.html">Why would anyone eat at Subway?</a>
+					      	<a class="menu-item" href="./blog/060122-macbook.html">Using decade-old Macs as my daily computers</a>
+					      	<!-- <a class="menu-item" href="./blog/101222-subway.html">Why would anyone eat at Subway?</a> -->
+					      </div>
 					      <p id="edit" class="element">Edit</p>
 					      <p id="view" class="element">View</p>
 					      <p id="special" class="element">Special</p>
@@ -25,7 +34,7 @@
 		      <div class="menu-bar-line"></div>
 		      <div class="container-2">
 			      <div class="desktop">
-				      <div style="position: absolute;" class="window1">
+				      <div style="position: absolute;" class="desktopexperience-window">
 					      <div class="title-bar">
 						      <div class="line-collection">
 							      <div class="small-line not-lower"></div>
@@ -34,25 +43,25 @@
 							      <div class="small-line not-lower"></div>
 							      <div class="small-line"></div>
 						      </div>
-						      <div class="button-selector1">
+						      <a href="./../index.html"><div class="button-selector1">
 							      <div class="close"></div>
-						      </div>
-						      <div class="line-collection2">
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line"></div>
+						      </div></a>
+						      <div class="line-collection2" style="">
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de"></div>
 						      </div>
 						      <div class="window-title">
 							      <p class="window-title">Welcome</p>
 						      </div>
 						      <div class="line-collection2">
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line not-lower"></div>
-							      <div class="middle-line"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de not-lower"></div>
+							      <div class="middle-line-de"></div>
 						      </div>
 						      <div class="button-selector1">
 							      <div class="other-button">
@@ -69,15 +78,8 @@
 					      </div>
 					      <div class="title-bar-line"></div>
 					      <div class="content scrollable">
-					      	<div class="top-part">
-							      <h1 class="content">The Official Website of Gavin Ruane!</h1>
-							      <h3 class="content">October 12, 2022 &#8226; Blog</h3>
-							      <h2>About Me</h2>
-						            <p>Hi there, I'm Gavin Ruane! I'm a student based in San Francisco, California, and you've just stumbled upon my website!</p>
-						            <p>On this website, I like to type up my calculus notes and share them with others. Using \(\LaTeX\) and MathJax, I typeset my math notes so that they're accessible and professional. I mean, who wants to download some nasty PDF when you can use the amazing technologies built into your browser and JavaScript?</p>
-						            <p>I also like to share some of my projects that I work on in school, like my computer science projects or maybe some big English assignment. But I probably won't share these because this freaky girl from Calabasas found a YouTube video of mine explaining my project and <em>demanded</em> that I send her my work. Uh...no? Do your own work!</p>
-						            <p>Have any questions? Feel free to email me! (Note: I don't always check my Outlook email right away, so don't expect an immediate response!)</p>
-							</div>
+					      	<h1 style="margin-bottom: 0;">The Gavin Ruane Desktop Experience</h1>
+					      	<h4 style="margin-top: 0;">Projects &bullet; Thoughts &bullet; Experiments &bullet; Linux User Superiority Complex &bullet; More!</h4>
 					      </div>
 				      </div>
 			      </div>

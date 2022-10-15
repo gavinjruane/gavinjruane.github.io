@@ -15,7 +15,7 @@ body {
 	flex-direction: column;
 }
 .left-side-container {
-	width: 1075px;
+	width: 1075px; 
 	overflow: none;
 	margin-right: 20px;
 	align-self: left;
@@ -57,6 +57,31 @@ a.right-side-container {
 	font-size: 14pt;
 	margin-top: 10px;
 }
+#file-dropdown {
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	left: 50px;
+	top: 40px;
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+}
+#file-dropdown:hover {
+	visibility: visible;
+}
+#file:hover + #file-dropdown {
+	visibility: visible;
+}
+.menu-item {
+	text-decoration: none;
+	color: black;
+}
+a.menu-item:hover {
+	color: gray;
+}
 .right-side {
 	justify-content: flex-end;
 	padding-right: 20px;
@@ -81,6 +106,17 @@ a.right-side-container {
 	width: 828px;
 	min-width: 600px;
 	height: 500px;
+	background-color: white;
+	/*position: absolute;*/
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+}
+.desktopexperience-window {
+	left: 300px;
+	top: 280px;
+	width: 500px;
+	min-width: 400px;
+	height: 220px;
 	background-color: white;
 	/*position: absolute;*/
 	border: 1px solid black;
@@ -133,6 +169,12 @@ p.window-title {
 }
 .middle-line {
 	width: 315px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
+.middle-line-de {
+	width: 153px;
 	top: 8px;
 	border: 1px solid black;
 	height: 0px;
