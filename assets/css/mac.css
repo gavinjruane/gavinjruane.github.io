@@ -57,6 +57,7 @@ a.right-side-container {
 	font-size: 14pt;
 	margin-top: 10px;
 }
+
 #file-dropdown {
 	visibility: hidden;
 	position: absolute;
@@ -68,6 +69,7 @@ a.right-side-container {
 	top: 40px;
 	border: 1px solid black;
 	box-shadow: 3px 3px;
+	z-index: 10;
 }
 #file-dropdown:hover {
 	visibility: visible;
@@ -75,6 +77,50 @@ a.right-side-container {
 #file:hover + #file-dropdown {
 	visibility: visible;
 }
+#edit-dropdown {
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	left: 105px;
+	top: 40px;
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+	z-index: 10;
+}
+#edit-dropdown:hover {
+	visibility: visible;
+}
+#edit:hover + #edit-dropdown {
+	visibility: visible;
+}
+#view-dropdown {
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	left: 200px;
+	top: 40px;
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+	z-index: 10;
+}
+#view-dropdown:hover {
+	visibility: visible;
+}
+#view:hover + #view-dropdown {
+	visibility: visible;
+}
+#special {
+	text-decoration: none;
+	color: black;
+}
+
+
 .menu-item {
 	text-decoration: none;
 	color: black;
@@ -122,6 +168,29 @@ a.menu-item:hover {
 	border: 1px solid black;
 	box-shadow: 3px 3px;
 }
+.calculus-side-window {
+	left: 45px;
+	top: 90px;
+	width: 275px;
+	min-width: 275px;
+	height: 645px;
+	background-color: white;
+	/*position: absolute;*/
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+}
+.calculus-main-window {
+	left: 340px;
+	top: 90px;
+	width: 740px;
+	min-width: 740px;
+	height: 645px;
+	background-color: white;
+	/*position: absolute;*/
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+}
+
 .title-bar {
 	display: flex;
 	flex-direction: row;
@@ -179,6 +248,18 @@ p.window-title {
 	border: 1px solid black;
 	height: 0px;
 }
+.middle-line-csw {
+	width: 227px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
+.middle-line-mht {
+	width: 150px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
 .not-lower {
 	margin-bottom: 3px;
 }
@@ -188,6 +269,17 @@ p.window-title {
 .line-collection2 {
 	margin-left: 3px;
 	margin-right: 3px;
+}
+.topic-navigation {
+	list-style-type: none;
+	padding-left: 10px;
+}
+.any-link {
+	text-decoration: none;
+	color: black;
+}
+.any-link:hover {
+	color: gray;
 }
 /*.small-lines2 {
 	position: absolute;
@@ -228,7 +320,7 @@ p.window-title {
 	height: 40px;
 }
 
-#file:hover {
+#file:hover, #edit:hover, #view:hover, #special:hover {
 	color: gray;
 }
 
@@ -273,13 +365,13 @@ h1.content {
 	flex-direction: row;
 }
 img.image-text {
-	width: 30%;
+	width: 40%;
 }
 
 p.image-text {
 	margin-left: 20px;
 	margin-right: 20px;
-	width: 70%;
+	width: 60%;
 }
 .scrollable {
 	overflow-y: scroll;
@@ -291,3 +383,7 @@ p.image-text {
 #image-of-brody {
 	min-width: 200px;
 }
+.hanging-indent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+} 
