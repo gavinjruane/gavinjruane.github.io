@@ -51,6 +51,7 @@ a.right-side-container {
 .elements {
 	width: 75%;
 	display: inline-flex;
+	height: 150%;
 }
 .element, .right-side-el {
 	padding-left: 20px;
