@@ -261,6 +261,12 @@ p.window-title {
 	border: 1px solid black;
 	height: 0px;
 }
+.middle-line-cpe {
+	width: 194px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
 .not-lower {
 	margin-bottom: 3px;
 }
@@ -274,6 +280,10 @@ p.window-title {
 .topic-navigation {
 	list-style-type: none;
 	padding-left: 10px;
+	padding-right: 5px;
+}
+.chapter-heading {
+	font-size: 18px;
 }
 .any-link {
 	text-decoration: none;
@@ -377,6 +387,10 @@ p.image-text {
 .scrollable {
 	overflow-y: scroll;
 	height: 90%;
+}
+.scrollable-calculus-navigator {
+	overflow-y: scroll;
+	height: 95%;
 }
 /*p.content, p.image-text {
 	font-family: sans-serif;
