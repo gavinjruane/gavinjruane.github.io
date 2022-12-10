@@ -267,6 +267,12 @@ p.window-title {
 	border: 1px solid black;
 	height: 0px;
 }
+.middle-line-prax {
+	width: 223px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
 .not-lower {
 	margin-bottom: 3px;
 }
