@@ -116,9 +116,24 @@ a.right-side-container {
 #view:hover + #view-dropdown {
 	visibility: visible;
 }
-#special {
-	text-decoration: none;
-	color: black;
+#special-dropdown {
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	left: 285px;
+	top: 40px;
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+	z-index: 10;
+}
+#special-dropdown:hover {
+	visibility: visible;
+}
+#special:hover + #special-dropdown {
+	visibility: visible;
 }
 
 
@@ -392,7 +407,6 @@ p.image-text {
 }
 .scrollable {
 	overflow-y: scroll;
-	height: 90%;
 }
 .scrollable-calculus-navigator {
 	overflow-y: scroll;
