@@ -439,3 +439,11 @@ td.first-column {
 	margin-left: 15px;
 	margin-right: 5px;
 }
+.mac_icon {
+	width: 25px; 
+	height: 25px;
+	margin-top: 10px
+}
+p.right-side-el {
+	margin-right: 20px
+}
