@@ -264,6 +264,12 @@ p.window-title {
 	border: 1px solid black;
 	height: 0px;
 }
+.middle-line-about {
+	width: 113px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
 .middle-line-csw {
 	width: 227px;
 	top: 8px;
