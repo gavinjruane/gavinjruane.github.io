@@ -135,6 +135,26 @@ a.right-side-container {
 #special:hover + #special-dropdown {
 	visibility: visible;
 }
+#calculus-dropside {
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	left: 285px;
+	top: 25px;
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+	z-index: 10;
+	width: 100%;
+}
+#calculus-dropside:hover {
+	visibility: visible;
+}
+#calculus:hover + #calculus-dropside {
+	visibility: visible;
+}
 
 
 .menu-item {
