@@ -2,6 +2,11 @@
 	font-family: "Chicago";
 	src: url("../fonts/Chicago.ttf");
 }
+@font-face {
+	font-family: "Geneva";
+	font-stretch: extra-condensed;
+	src: url("../fonts/Geneva.ttf");
+}
 body {
 	min-width: 820px;
 	font-family: "Chicago";
@@ -10,6 +15,10 @@ body {
 	flex-direction: column;
 	background-color: black;
 }
+/*p {
+	font-family: Geneva;
+	line-height: 25px;
+}*/
 .column-manager {
 	display: flex;
 	flex-direction: column;
@@ -142,17 +151,37 @@ a.right-side-container {
 	display: flex;
 	flex-direction: column;
 	padding: 2px;
-	left: 285px;
+	left: 275px;
 	top: 25px;
 	border: 1px solid black;
 	box-shadow: 3px 3px;
-	z-index: 10;
+	z-index: 20;
+	width: 100%;
+}
+#physics-dropside {
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	left: 275px;
+	top: 45px;
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+	z-index: 20;
 	width: 100%;
 }
 #calculus-dropside:hover {
 	visibility: visible;
 }
+#physics-dropside:hover {
+	visibility: visible;
+}
 #calculus:hover + #calculus-dropside {
+	visibility: visible;
+}
+#physics:hover + #physics-dropside {
 	visibility: visible;
 }
 
@@ -472,4 +501,10 @@ td.first-column {
 }
 p.right-side-el {
 	margin-right: 20px
+}
+
+
+mark {
+	background-color: black;
+	color: white;
 }

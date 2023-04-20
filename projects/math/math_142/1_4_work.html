@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="./../../../assets/css/mac.css">
-		<title>Assignment 1 | Gavin Ruane</title>
+		<title>1.4: Work | Gavin Ruane</title>
 
 		<!--MathJax-->
     	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -13,8 +13,8 @@
 			background-image: url('./../../../assets/images/front.jpg');
 			background-size: cover;
 		}
-		.middle-line-spring1 {
-			width: 203px;
+		.middle-line-spring1_4 {
+			width: 219px;
 			top: 8px;
 			border: 1px solid black;
 			height: 0px;
@@ -36,11 +36,8 @@
 					      	<a class="menu-item" href="./../../hometown-land.html">My Hometown? Or Someone Else's?</a>
 					      	<a id="calculus" class="menu-item">The Calculus Reference</a>
 					      	<div id="calculus-dropside">
-					      		<a class="menu-item" href="#">Assignment 1</a>
-					      	</div>
-					      	<a id="physics" class="menu-item">The Physics Reference</a>
-					      	<div id="physics-dropside">
-					      		<a class="menu-item" href="./../../physics/phys_141/kinematic_equations.html">Kinematic Equations</a>
+					      		<a class="menu-item" href="#">Assignments</a>
+					      		<a class="menu-item" href="#">Fact Sheets</a>
 					      	</div>
 					  	  </div>
 					      <p id="view" class="element">Archive</p>
@@ -71,14 +68,14 @@
 					      	<ul class="topic-navigation">
 					      		<li>MATH 142</li>
 					      		<ul>
-					      			<a class="any-link" href="#"><li>Assignment 1</li></a>
+					      			<a class="any-link" href="./assignment_1.html"><li>Assignment 1</li></a>
 					      		</ul>
 					      	</ul>
 					      	<h4 style="margin-bottom: 0;">Fact Sheets</h4>
 					      	<ul class="topic-navigation">
 					      		<li>MATH 142</li>
 					      		<ul>
-					      			<a class="any-link" href="./1_4_work.html"><li>1.4: Work</li></a>
+					      			<a class="any-link" href="#"><li>1.4: Work</li></a>
 					      		</ul>
 					      	</ul>
 					      </div>
@@ -93,25 +90,25 @@
 							      <div class="small-line not-lower"></div>
 							      <div class="small-line"></div>
 						      </div>
-						      <a href="./../../../index.html"><div class="button-selector1">
+						      <a href="./../index.html"><div class="button-selector1">
 							      <div class="close"></div>
 						      </div></a>
 						      <div class="line-collection2">
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4"></div>
 						      </div>
 						      <div class="window-title">
-							      <p class="window-title">MATH 142 Assignment 1</p>
+							      <p class="window-title">MATH 142 1.4: Work</p>
 						      </div>
 						      <div class="line-collection2">
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1 not-lower"></div>
-							      <div class="middle-line-spring1"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4 not-lower"></div>
+							      <div class="middle-line-spring1_4"></div>
 						      </div>
 						      <div class="button-selector1">
 							      <div class="other-button">
@@ -128,64 +125,51 @@
 					      </div>
 					      <div class="title-bar-line"></div>
 					      <div style="height: 93%" class="content scrollable">
-					      	<ol>
-					      		<li>Find the area between the curves \(x=y^2-4y\) and \(x=2y-y^2\)</li>
-					      		<em><h5 style="text-align: center;">Points of intersection</h5></em>
-					      		\[
-					      		\begin{align}
-					      			y^2-4y&=2y-y^2 \\
-					      			2y^2-6y&=0 \\
-					      			2y(y-3)&=0 \\
-					      			y=0 &\text{ and } y=3
-					      		\end{align}
-					      		\]
-					      		<em><h5 style="text-align: center;">Finding area (by integral)</h5></em>
-					      		\[
-					      		\begin{align}
-					      			A&=\int_0^3 [(y^2-4y)-(2y-y^2)]dy \\
-					      			&=\int_0^3 [y^2-4y-2y+y^2]dy \\
-					      			&=\int_0^3 [2y^2-6y]dy \\
-					      			&=\left[\frac{2y^3}{3}-\frac{6y^2}{2}\right]_0^3 \rightarrow \left[\frac{2y^3}{3}-3y^2\right]_0^3\\
-					      			&=\left[\frac{2(3)^3}{3}-\frac{6(3)^2}{2}\right]-\left[\frac{2(0)^3}{3}-\frac{6(0)^2}{2}\right] \\
-					      			&=[-9]-[0]\rightarrow\|-9\| \\
-					      			\text{area }&=9\text{ units}^2
-					      		\end{align}
-					      		\]
+					      	<h1 style="margin-bottom: 0;">1.4: Work</h1>
+					      	<p style="margin-bottom: 0;"><mark style="padding: 3px 3px 0px 3px; border-radius: 5px;">Work</mark> By the physical definition, it is defined as \(W=\text{force}\times\text{distance}\)</p>
+					      	<p style="margin-bottom: 0;">If we consider the distance over a short spatial step called \(\Delta x\), we can rewrite the definition, replacing "distance" with \(\Delta x\).</p>
+					      	<p style="margin-bottom: 0;">Generally, force is not constant and dependent on the position, so it can be represented as \(F=F(x)\)</p>
+					      	<p style="margin-bottom: 0;">So, the overall work is given by the sum \[\sum_i F_i(x)\Delta x\]</p>
+					      	<p style="margin-bottom: 0;">If we set \(\Delta x\) to be infinitely small, it will be the limit of the above sum as \(\Delta x\rightarrow 0\). This is better shown as the integral: \[W=\int_a^b F(x)dx\]</p>
 
-					      		<li>Find the volume of the solid generated by rotating the area between \(y=\frac{1}{2}x^2\) and \(y=\frac{1}{2}\sqrt{x}\) on \(0\leq x\leq 1\) about the line \(y=3\). Show all work!</li>
-					      		\[
-					      		\begin{align}
-					      			V&=\int_0^1 \left[3\pi -\pi\left(\frac{1}{2}x^2\right)-\pi\left(\frac{1}{2}\sqrt{x}\right)\right]dx \\
-					      			&=\left[\pi\left(\frac{3x}{1}\right)-\pi\left(\frac{1}{2}\times\frac{x^3}{3}\right)-\pi\left(\frac{1}{2}\times\frac{x^{\frac{3}{2}}}{\frac{3}{2}}\right)\right]_0^1 \\
-					      			&=\left[3\pi x-\pi\left(\frac{x^3}{6}\right)-\pi\left(\frac{x^{\frac{3}{2}}}{3}\right)\right]_0^1 \\
-					      			&=\left[3\pi (1)-\pi\left(\frac{(1)^3}{6}\right)-\pi\left(\frac{(1)^{\frac{3}{2}}}{3}\right)\right]-[0] \\
-					      			&=\left[3\pi -\frac{\pi}{6}-\frac{\pi}{3}\right]-[0] \\
-					      			&=\left[\frac{18\pi}{6}-\frac{\pi}{6}-\frac{2\pi}{6}\right]-[0] \\
-					      			\text{volume }&=\frac{15\pi}{6}\text{ units}^3
-					      		\end{align}
-					      		\]
+					      	<p style="margin-bottom: 0;"><mark style="padding: 3px 3px 0px 3px; border-radius: 5px;">Force equation</mark> The force equation can take many different forms.</p>
+					      	<ul>
+					      		<li><mark style="padding: 3px 3px 0px 3px; border-radius: 5px;">Object weight</mark> \(F=mg\) where \(m\) represents mass and \(g\) represents gravity.</li>
+					      		<li><mark style="padding: 3px 3px 0px 3px; border-radius: 5px;">Hooke's law</mark> For a spring of natural length \(x_0\), the force required to extend it \(x\) distance is represented by: \[F(x)=kx\]where \(k\) represents the spring constant.</li>
+					      	</ul>
 
-					      		<li>Find the volume of the solid generated by rotating the area between the curve \(y=x-x^2\) and the \(x\)-axis about the \(y\)-axis.</li>
-					      		<em><h5 style="text-align: center;">Points of intersection</h5></em>
-					      		\[
-					      		\begin{align}
-					      			0&=x-x^2 \\
-					      			0&=x(1-x) \\
-					      			y=0 &\text{ and } y=1
-					      		\end{align}
-					      		\]
-					      		<em><h5 style="text-align: center;">Finding area (by integral)</h5></em>
-					      		\[
-					      		\begin{align}
-					      			V&=\int_0^1 \left[2\pi x(x-x^2)\right]dx \\
-					      			&=\int_0^1 \left(2\pi x^2-2\pi x^3\right)dx \\
-					      			&=\left[\frac{2\pi x^3}{3}-\frac{\pi x^4}{2}\right]_0^1 \\
-					      			&=\left[\frac{2\pi (1)^3}{3}-\frac{\pi (1)^4}{2}\right]-[0] \\
-					      			&=\left[\frac{4\pi}{6}-\frac{3\pi}{6}\right]-[0] \\
-					      			\text{volume }&=\frac{\pi}{6}\text{ units}^3
-					      		\end{align}
-					      		\]
-					      	</ol>
+					      	<h2 style="margin-bottom: 0;">Example using a spring</h2>
+					      	<p>A natural length for a spring is 0.2m. A force of 50 Newtons is required to extend the spring to 0.5m. How much work is done extending the spring from 0.5m to 1.0m?</p>
+					      	\[
+					      	\begin{align}
+					      		a&=0.5-0.2=0.3 \\
+					      		b&=1.0-0.2=0.8
+					      	\end{align}
+					      	\]
+					      	\[
+					      	\begin{align}
+					      		W&=\int_{0.3}^{0.8} (kx)dx \\
+					      		&=\left[\frac{kx^2}{2}\right]_{0.3}^{0.8} \\
+					      		&=\left[\frac{k(0.8)^2}{2}\right]-\left[\frac{k(0.3)^2}{2}\right] \\
+					      		&=0.32k-0.045k \\
+					      		&=0.275k
+					      	\end{align}
+					      	\]
+					      	\[
+					      	\begin{align}
+					      		50&=0.3k \\
+					      		k&=166.667
+					      	\end{align}
+					      	\]
+					      	\[
+					      	\begin{align}
+					      		W&=0.275(166.667) \\
+					      		W&=45.833
+					      	\end{align}
+					      	\]
+
+					      	<h2 style="margin-bottom: 0;">Another example using a spring</h2>
+					      	<p>A natural length for a spring is 0.18m. requires 20 Newtons to extend it to 0.32m. How much work is done extending it from 0.32m to 0.4m?</p>
 					      </div>
 				      </div>
 			      </div>
