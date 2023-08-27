@@ -222,6 +222,25 @@ a.menu-item:hover {
 	border: 1px solid black;
 	box-shadow: 3px 3px;
 }
+.thinker-window {
+	width: 850px;
+	min-width: 600px;
+	height: 600px;
+	background-color: white;
+	/*position: absolute;*/
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+}
+.thinker-helper-window {
+	width: 300px;
+	min-width: 300px;
+	height: 200px;
+	min-height: 200px;
+	background-color: white;
+	/*position: absolute;*/
+	border: 1px solid black;
+	box-shadow: 3px 3px;
+}
 .desktopexperience-window {
 	left: 300px;
 	top: 280px;
@@ -303,6 +322,30 @@ p.window-title {
 }
 .middle-line {
 	width: 315px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
+.small-line-th {
+	width: 12px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
+.middle-line-th {
+	width: 334px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
+.small-line-thhelp {
+	width: 12px;
+	top: 8px;
+	border: 1px solid black;
+	height: 0px;
+}
+.middle-line-thhelp {
+	width: 68px;
 	top: 8px;
 	border: 1px solid black;
 	height: 0px;
@@ -507,4 +550,21 @@ p.right-side-el {
 mark {
 	background-color: black;
 	color: white;
+}
+
+.date-navigation {
+	display: inline-flex;
+}
+
+h3.date-navigation {
+	margin-right: 10px;
+}
+
+.thoughts-div {
+	margin: 0px;
+	margin-top: 5px;
+}
+
+h5.thoughts-div {
+	color: grey;
 }
