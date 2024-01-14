@@ -1,0 +1,157 @@
+@import "platinum.css";
+
+/*Definitions*/
+
+@font-face {
+	font-family: "Virtue";
+	src: url("../fonts/Virtue.ttf");
+}
+@font-face {
+	font-family: "Geneva";
+	font-stretch: extra-condensed;
+	src: url("../fonts/Geneva.ttf");
+}
+
+/*Body and General*/
+
+body {
+	background-color: #9999cc;
+	font-family: "Virtue";
+	margin: 25px;
+}
+
+/*Menu Bar*/
+
+#menu-bar {
+/*	background-color: #dddddd;*/
+	background-image: linear-gradient(#fff 0, #ddd 5% 92%, #6e6e6e 100%);
+	display: flex;
+	flex-direction: row;
+	padding: 4px;
+	border: 1px solid black;
+	border-radius: 5px;
+/*	z-index: 0;*/
+/*	font-size: 14px;*/
+}
+
+#left-menu-bar-container {
+	flex: 95%;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+p.lmbc, p.rmbc {
+	margin: 0;
+}
+
+div.lmbc, div.rmbc {
+	margin-right: 10px;
+}
+
+div.apple-icon {
+	margin-right: 15px;
+}
+
+div.menubarobject {
+	margin-right: 13px;
+}
+
+#right-menu-bar-container {
+	flex: 5%;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+img.menubaricon {
+	width: 16px;
+	height: 16px;
+}
+
+/*Edits to Mac UI*/
+
+span.window-title {
+	font-size: 15px;
+}
+
+/*Content*/
+
+div.bookshelf {
+	display: flex;
+	flex-direction: row;
+}
+
+#inner-select-col {
+	flex: 40%;
+	background-color: #3a3a25;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+#inner-content-col {
+	flex: 60%;
+	background-color: #3a3a25;
+	border: 1px solid black;
+}
+
+#isc-title {
+	flex: 6%;
+	background-color: #3a3a25;
+	display: inline-flex;
+}
+
+p.isc-title-content {
+	color: #cacbb3;
+	margin: 8px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+
+p.isc-header-content {
+	color: #861300;
+	font-family: "Geneva";
+	font-size: 12px;
+}
+
+#isc-header-text {
+	font-weight: bold;
+}
+
+ul.isc-header-content {
+	color: #861300;
+	font-family: "Geneva";
+	font-size: 12px;
+}
+
+#isc-rest {
+	flex: 94%;
+	background-color: #cacbb3;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+div.isc-header {
+	flex: 25%;
+}
+
+#select-box {
+	flex: 75%;
+	background-color: white;
+}
+
+ul.isc-select-box {
+	color: black;
+	padding: 0;
+	margin: 8px;
+	font-family: "Geneva";
+	font-size: 12px;
+}
+
+/*Temp*/
+
+.container-temp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

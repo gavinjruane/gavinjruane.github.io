@@ -247,6 +247,7 @@ a.menu-item:hover {
 	width: 500px;
 	min-width: 400px;
 	height: 220px;
+	position: absolute;
 	background-color: white;
 	/*position: absolute;*/
 	border: 1px solid black;
