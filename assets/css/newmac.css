@@ -1,4 +1,5 @@
 @import "platinum.css";
+@import "navigation.css";
 
 /*Definitions*/
 
@@ -27,7 +28,6 @@ body {
 	background-image: linear-gradient(#fff 0, #ddd 5% 92%, #6e6e6e 100%);
 	display: flex;
 	flex-direction: row;
-	padding: 4px;
 	border: 1px solid black;
 	border-radius: 5px;
 /*	z-index: 0;*/
@@ -36,7 +36,6 @@ body {
 
 #left-menu-bar-container {
 	flex: 95%;
-	display: inline-flex;
 	flex-direction: row;
 }
 
@@ -44,7 +43,7 @@ p.lmbc, p.rmbc {
 	margin: 0;
 }
 
-div.lmbc, div.rmbc {
+div.lmbc, div.rmbc, img.rmbc {
 	margin-right: 10px;
 }
 
@@ -54,12 +53,16 @@ div.apple-icon {
 
 div.menubarobject {
 	margin-right: 13px;
+	font-size: 15px;
+	align-self: center;
 }
 
 #right-menu-bar-container {
 	flex: 5%;
 	display: inline-flex;
 	flex-direction: row;
+	align-items: center;
+	align-content: center;
 }
 
 img.menubaricon {
@@ -95,14 +98,13 @@ div.bookshelf {
 }
 
 #isc-title {
-	flex: 6%;
 	background-color: #3a3a25;
 	display: inline-flex;
 }
 
 p.isc-title-content {
 	color: #cacbb3;
-	margin: 8px;
+	margin: 5px;
 	font-family: "Times New Roman";
 	font-weight: bold;
 }
@@ -115,12 +117,31 @@ p.isc-header-content {
 
 #isc-header-text {
 	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#isc-header2-text {
+	color: black;
+	font-family: "Geneva";
+	font-size: 12px;
+	margin-top: 20px;
 }
 
 ul.isc-header-content {
 	color: #861300;
 	font-family: "Geneva";
 	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+label.isc-radio {
+	color: #861300;
+	font-family: "Geneva";
+	font-size: 12px;
+}
+
+input.isc-radio {
+	border: 1px solid black;
 }
 
 #isc-rest {
@@ -140,12 +161,42 @@ div.isc-header {
 	background-color: white;
 }
 
-ul.isc-select-box {
+details.isc-select-box {
 	color: black;
 	padding: 0;
 	margin: 8px;
 	font-family: "Geneva";
 	font-size: 12px;
+}
+
+#isc-pseudosearch {
+	width: 100%;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+#isc-button {
+	background-color: #861300;
+	font-family: "Geneva";
+	color: white;
+	font-size: 12px;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#icon_drop-down {
+	color: #cacbb3;
+	padding-left: 2px;
+	padding-top: 2px;
+}
+
+#logo-icon {
+	padding-top: 6px;
+	padding-left: 8px;
 }
 
 /*Temp*/
@@ -154,4 +205,67 @@ ul.isc-select-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/*About This Computer window*/
+
+#about .inner {
+    left: 20px;
+    top: 30px;
+}
+#about .inner {
+    width: 600px;
+    height: 400px;
+}
+
+div.about_panel {
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	font-family: "Geneva";
+}
+
+div.about-banner {
+	background-color: white;
+    border: 1px solid #222;
+    box-shadow: inset 1px 1px 0 0 #ccc, inset -1px -1px 0 0 #888;
+	flex: 30%;
+}
+
+div.about-info {
+	flex: 40%;
+}
+
+div.about-programs {
+	background: linear-gradient(
+        tobottomright,
+        #999,
+        #aaa,
+        #bbb,
+        #ccc,
+        #ddd,
+        #eee,
+        #fff
+    );
+    border: 1px solid #222;
+    box-shadow: inset 1px 1px 0 0 #ccc, inset -1px -1px 0 0 #888;
+	flex: 30%;
+}
+
+#about-banner-image {
+	width: 100%;
+}
+
+p.about-info-text {
+	font-size: 12px;
+	font-family: "Geneva";
+	margin-left: 5px;
+}
+
+ul.about-info-text {
+	font-size: 12px;
+	font-family: "Geneva";
+	list-style-type: circle;
+	margin-bottom: 2px;
 }
