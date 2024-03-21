@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./assets/css/newmac.css">
+		<link rel="stylesheet" href="./assets/css/navigation.css">
+		<title>Gavin Ruane</title>
+
+		<!--MathJax-->
+    	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    	<!-- JQuery -->
+    	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<!-- <div id="menu-bar">
+			<div id="left-menu-bar-container" class="lmbc">
+				<div class="lmbc"><p class="lmbc"></p></div>
+				<div class="apple-icon"><img src="./assets/icons/apple.png"></div>
+				<div class="lmbc menubarobject"><p class="lmbc">Projects</p></div>
+				<div class="lmbc menubarobject"><p class="lmbc">Collections</p></div>
+				<div class="lmbc menubarobject"><p class="lmbc">Archive</p></div>
+				<div class="lmbc menubarobject"><p class="lmbc">Special</p></div>
+			</div>
+
+		</div> -->
+		<div id="menu-bar" class="nav-wrapper">
+			<div id="left-menu-bar-container" class="lmbc">
+				<ul class="nav-list">
+                    <li id="apple-logo">
+                        <img id="logo-icon" src="./assets/icons/apple.png" />
+                        <ul class="menu command_button">
+                            <li id="menu-about"><img src="./assets/icons/apple.png" width="16" alt="About" />About</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Projects
+                        <ul class="menu command_button">
+                            <li id="menu-bookshelf">
+                                Bookshelf
+                            </li>
+                            <hr />
+                            <li id="menu-yolo">
+                                Cause an error
+                            </li>
+                            <li id="menu-sadmac">
+                                Cause a crash
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Collections
+                        <ul class="menu command_button">
+                            <li class="disabled noimg">Copy</li>
+                            <li class="disabled noimg">Paste</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Archive
+                        <ul class="menu command_button">
+                            <li class="disabled">Get you!</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Special
+                        <ul class="menu command_button">
+                            <li id="menu-about" class="">About This Website...</li>
+                        </ul>
+                    </li>
+
+				</ul>
+			</div>
+			<div id="right-menu-bar-container">
+				<img class="rmbc menubaricon" src="./assets/icons/macos90.png">
+				<div class="rmbc menubarobject"><p class="rmbc">Welcome</p></div>
+			</div>
+		</div>
+
+		<div id="bookshelf" class="content draggable-window hidden" data-window-icon="img/about.png" data-window-name="Bookshelf" style="left: 100px; top: 200px;">
+            <div class="control-box close-box">
+                <a class="control-box-inner"></a>
+            </div>
+            <div class="control-box zoom-box">
+                <div class="control-box-inner">
+                    <div class="zoom-box-inner"></div>
+                </div>
+            </div>
+            <div class="control-box window-collapse">
+                <div class="control-box-inner">
+                    <div class="window-collapse-inner"></div>
+                </div>
+            </div>
+            <h1 class="titlebar"><span class="window-title">Microsoft Bookshelf 98</span></h1>
+            <div class="inner bookshelf">
+                <div id="inner-select-col" class="inner-column">
+                	<div id="isc-title" class="isc-title-content">
+                		<span id="icon_drop-down" class="material-icons">arrow_drop_down</span>
+                		<p class="isc-title-content">All Books</p>
+                	</div>
+                	<div id="isc-rest">
+                		<div class="isc-header">
+	                		<p id="isc-header-text" class="isc-header-content">I want to find:</p>
+		                		<input type="radio" class="isc-radio" name="age" value="30">
+	  							<label class="isc-radio" for="age1">articles about</label><br>
+	  							<input type="radio" class="isc-radio" name="age" value="30">
+	  							<label class="isc-radio" for="age1">all articles containing the word(s)</label><br>
+	                		<form action="">
+								<input type="text" id="isc-pseudosearch" name="fname" placeholder="This search box doesn't work.">
+								<button type="button" id="isc-button" onclick="alert('Hello world!')">Search Now...</button>
+							</form>
+							<br>
+							<p id="isc-header2-text">Articles</p>
+	                	</div>
+                		<div id="select-box" class="isc-select-box">
+                			<details class="isc-select-box">
+                				<summary>Chapter 1</summary>
+                			</details>
+                			<details class="isc-select-box">
+                				<summary>Chapter 1</summary>
+                			</details>
+                		</div>
+                	</div>
+                </div>
+                <div id="inner-content-col" class="inner-column">
+                	<div id="isc-title" class="isc-title-content">
+                		<p class="isc-title-content">Calculus</p>
+                	</div>
+                	<div id="isc-rest">
+                		<!-- <div class="isc-header">
+	                		<p id="isc-header-text" class="isc-header-content">I want to find:</p>
+		                		<input type="radio" class="isc-radio" name="age" value="30">
+	  							<label class="isc-radio" for="age1">articles about</label><br>
+	  							<input type="radio" class="isc-radio" name="age" value="30">
+	  							<label class="isc-radio" for="age1">all articles containing the word(s)</label><br>
+	                		<form action="">
+								<input type="text" id="isc-pseudosearch" name="fname" placeholder="This search box doesn't work.">
+								<button type="button" id="isc-button" onclick="alert('Hello world!')">Search Now...</button>
+							</form>
+							<br>
+							<p id="isc-header2-text">Articles</p>
+	                	</div>
+                		<div id="select-box" class="isc-select-box">
+                			<details class="isc-select-box">
+                				<summary>Chapter 1</summary>
+                			</details>
+                			<details class="isc-select-box">
+                				<summary>Chapter 1</summary>
+                			</details>
+                		</div> -->
+                	</div>
+                </div>
+                <!-- <button class="command_button boot-button">Close</button> -->
+            </div>
+        </div>
+
+        <div id="about" class="content draggable-window" data-window-icon="img/about.png" data-window-name="About This Computer" style="left: 50px; top: 200px;">
+            <div class="control-box close-box">
+                <a class="control-box-inner"></a>
+            </div>
+            <!-- <div class="control-box zoom-box">
+                <div class="control-box-inner">
+                    <div class="zoom-box-inner"></div>
+                </div>
+            </div> -->
+            <div class="control-box window-collapse">
+                <div class="control-box-inner">
+                    <div class="window-collapse-inner"></div>
+                </div>
+            </div>
+            <h1 class="titlebar"><span class="window-title">About This Computer</span></h1>
+            <div class="inner about_panel">
+                <div class="about-banner">
+                	<img id="about-banner-image" src="./assets/images/aboutpanel.png">
+                </div>
+                <div class="about-info">
+                	<p class="about-info-text"><strong>Author: </strong>Gavin Ruane</p>
+                	<p class="about-info-text"><strong>About Site: </strong>If you know me, you know I love retro computers&mdash;especially classic Macintoshes&mdash;which is why I've themed my site around the classic Mac OS. Recently, I've been working on "upgrading" my site from System 6 to Mac OS 9, which is what you're seeing today.</p>
+                	<p class="about-info-text"><strong>Thanks To: </strong>The "upgrade" to Mac OS 9 wouldn't be possible without the following projects from other cool Internet users:</p>
+                	<ul class="about-info-text">
+                		<li><a href="https://github.com/robbiebyrd/platinum/" target="_blank">Platinum by Robbie Bird</a>, a CSS/JS UI framework replicating Mac OS components (modified for my site)</li>
+                		<li><a href="http://www.scootergraphics.com/virtue/" target="_blank">Virtue (font) by Marty P. Pfeiffer</a>, a readable Charcoal-like font</li>
+                	</ul>
+                	<p class="about-info-text"><strong>Last Updated: </strong>16 January 2024</p>
+                </div>
+                <div class="about-programs">
+
+                </div>
+            </div>
+        </div>
+        <script src="./assets/scripts/platinum.js"></script>
+	</body>
+</html>
