@@ -1,8 +1,8 @@
 /*@import "charcoal.css";
 @import "checkbox.css";
 @import "chicago.css";
-@import "scrollbar.css";
-@import "navigation.css";*/
+@import "scrollbar.css";*/
+@import "navigation.css";
 
 *,
 :before,
@@ -406,11 +406,11 @@ div.content.noscroll .inner {
     min-height: 80px;
     min-width: 100px;
 }
-#about .inner {
+#bookshelf .inner {
     left: 20px;
     top: 30px;
 }
-#about .inner {
+#bookshelf .inner {
     width: 700px;
     height: 500px;
 }
