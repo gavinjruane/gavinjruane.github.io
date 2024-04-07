@@ -1,0 +1,22 @@
+/*Definitions*/
+
+@font-face {
+	font-family: "Virtue";
+	src: url("../fonts/Virtue.ttf");
+}
+@font-face {
+	font-family: "Geneva";
+	font-stretch: extra-condensed;
+	src: url("../fonts/Geneva.ttf");
+}
+
+/*Body and General*/
+
+body {
+	font-family: "Geneva";
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 1rem;
+}

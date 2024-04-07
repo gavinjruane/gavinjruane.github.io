@@ -14,7 +14,10 @@ ul.menu {
     margin-left: -0.5rem;
     padding: 0;
     position: absolute;
-    background-color: #ddd;
+    background-image:
+        linear-gradient(to bottom, rgb(255,255,255) 0px,rgba(128,128,128,0) 3px),
+        linear-gradient(to top, rgb(110,110,110) 0px, rgba(128,128,128,0) 2px),
+        linear-gradient(to bottom, #ddd 0%, #ddd 100%);
     color: #000;
     font-size: 13px;
     list-style-type: none;

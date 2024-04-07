@@ -82,7 +82,7 @@
 			</div>
 		</div>
 
-		<div id="bookshelf" class="content draggable-window hidden" data-window-icon="img/about.png" data-window-name="Bookshelf" style="left: 100px; top: 200px;">
+		<div id="bookshelf" class="content draggable-window hidden" data-window-icon="img/about.png" data-window-name="Bookshelf" style="left: 40%; top: 40%; z-index: 1300;">
             <div class="control-box close-box">
                 <a class="control-box-inner"></a>
             </div>
@@ -125,44 +125,30 @@
                 				<summary>Chapter 1</summary>
                 			</details>
                 		</div>
+                		<form action="">
+							<button type="button" id="advsearch-button" onclick="alert('Hello world!')">Advanced Search</button>
+						</form>
                 	</div>
                 </div>
                 <div id="inner-content-col" class="inner-column">
-                	<div id="isc-title" class="isc-title-content">
+                	<div id="isc-subtitle" class="isc-title-content">
                 		<p class="isc-title-content">Calculus</p>
                 	</div>
-                	<div id="isc-rest">
-                		<!-- <div class="isc-header">
-	                		<p id="isc-header-text" class="isc-header-content">I want to find:</p>
-		                		<input type="radio" class="isc-radio" name="age" value="30">
-	  							<label class="isc-radio" for="age1">articles about</label><br>
-	  							<input type="radio" class="isc-radio" name="age" value="30">
-	  							<label class="isc-radio" for="age1">all articles containing the word(s)</label><br>
-	                		<form action="">
-								<input type="text" id="isc-pseudosearch" name="fname" placeholder="This search box doesn't work.">
-								<button type="button" id="isc-button" onclick="alert('Hello world!')">Search Now...</button>
-							</form>
-							<br>
-							<p id="isc-header2-text">Articles</p>
-	                	</div>
-                		<div id="select-box" class="isc-select-box">
-                			<details class="isc-select-box">
-                				<summary>Chapter 1</summary>
-                			</details>
-                			<details class="isc-select-box">
-                				<summary>Chapter 1</summary>
-                			</details>
-                		</div> -->
+                	<div id="isc-content-rest">
+						<iframe id="isc-content-displayer" src="./calculus/7/7-1.html"></iframe>
+                	</div>
+                	<div id="isc-content-bottombar">
+
                 	</div>
                 </div>
                 <!-- <button class="command_button boot-button">Close</button> -->
             </div>
         </div>
 
-        <div id="about" class="content draggable-window" data-window-icon="img/about.png" data-window-name="About This Computer" style="left: 50px; top: 200px;">
-            <div class="control-box close-box">
+        <div id="about" class="content draggable-window" data-window-icon="img/about.png" data-window-name="About This Computer" style="left: 25%; top: 25%;">
+            <!--<div class="control-box close-box">
                 <a class="control-box-inner"></a>
-            </div>
+            </div>-->
             <!-- <div class="control-box zoom-box">
                 <div class="control-box-inner">
                     <div class="zoom-box-inner"></div>
@@ -180,7 +166,8 @@
                 </div>
                 <div class="about-info">
                 	<p class="about-info-text"><strong>Author: </strong>Gavin Ruane</p>
-                	<p class="about-info-text"><strong>About Site: </strong>If you know me, you know I love retro computers&mdash;especially classic Macintoshes&mdash;which is why I've themed my site around the classic Mac OS. Recently, I've been working on "upgrading" my site from System 6 to Mac OS 9, which is what you're seeing today.</p>
+                	<p class="about-info-text"><strong>About Me: </strong>I'm a second-year student at Cal Poly in San Luis Obispo, California studying computer engineering&mdash;and this is my personal website! I like to update this site with projects I've created, typeset notes for classes I've taken, and my thoughts on various forms of media.</p>
+                	<p class="about-info-text"><strong>About Website: </strong>If you know me, you know I love retro computers&mdash;especially classic Macintoshes&mdash;which is why I've themed my site around the classic Mac OS. Recently, I've been working on "upgrading" my site from System 6 to Mac OS 9, which is what you're seeing today.</p>
                 	<p class="about-info-text"><strong>Thanks To: </strong>The "upgrade" to Mac OS 9 wouldn't be possible without the following projects from other cool Internet users:</p>
                 	<ul class="about-info-text">
                 		<li><a href="https://github.com/robbiebyrd/platinum/" target="_blank">Platinum by Robbie Bird</a>, a CSS/JS UI framework replicating Mac OS components (modified for my site)</li>
@@ -189,7 +176,17 @@
                 	<p class="about-info-text"><strong>Last Updated: </strong>16 January 2024</p>
                 </div>
                 <div class="about-programs">
-
+					<div class="about-item">
+						<img id="mathjax-icon" src="./assets/icons/MathJax.svg.png">
+						<p class="about-programs-title about-programs-text">MathJax</p>
+						<p class="about-programs-text">32.9 MB</p>
+					</div>
+					<div class="about-item">
+						<img id="mathjax-icon" src="./assets/icons/internetexplorer.png">
+						<p class="about-programs-title about-programs-text">Internet Explorer</p>
+						<p class="about-programs-text">1,029 MB</p>
+					</div>
+					<!--<div class="about-programs-progress-bar"></div>-->
                 </div>
             </div>
         </div>

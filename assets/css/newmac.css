@@ -25,7 +25,7 @@ body {
 
 #menu-bar {
 /*	background-color: #dddddd;*/
-	background-image: linear-gradient(#fff 0, #ddd 5% 92%, #6e6e6e 100%);
+	background-image: linear-gradient(#fff 0, #ddd 5% 93%, #6e6e6e 100%);
 	display: flex;
 	flex-direction: row;
 	border: 1px solid black;
@@ -81,6 +81,8 @@ span.window-title {
 div.bookshelf {
 	display: flex;
 	flex-direction: row;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #inner-select-col {
@@ -95,10 +97,17 @@ div.bookshelf {
 	flex: 60%;
 	background-color: #3a3a25;
 	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
 }
 
 #isc-title {
-	background-color: #3a3a25;
+	background-color: #3c3d27;
+	display: inline-flex;
+}
+
+#isc-subtitle {
+	background-color: #817d25;
 	display: inline-flex;
 }
 
@@ -152,6 +161,29 @@ input.isc-radio {
 	padding: 10px;
 }
 
+#isc-content-rest {
+	flex: 94%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#isc-content-bottombar {
+	flex: 6%;
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+#isc-content-displayer {
+	flex: 90%;
+	border: 0;
+}
+
 div.isc-header {
 	flex: 25%;
 }
@@ -186,7 +218,23 @@ details.isc-select-box {
 	float: right;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding: 3px;
 }
+
+#advsearch-button {
+	background-color: #2d2e1d;
+	font-family: "Geneva";
+	color: white;
+	font-size: 12px;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 3px;
+}
+
 
 #icon_drop-down {
 	color: #cacbb3;
@@ -215,7 +263,7 @@ details.isc-select-box {
 }
 #about .inner {
     width: 600px;
-    height: 400px;
+    height: 450px;
 }
 
 div.about_panel {
@@ -238,7 +286,7 @@ div.about-info {
 }
 
 div.about-programs {
-	background: linear-gradient(
+	/*background: linear-gradient(
         tobottomright,
         #999,
         #aaa,
@@ -247,14 +295,37 @@ div.about-programs {
         #ddd,
         #eee,
         #fff
-    );
+    );*/
+	background-color: #efefef;
     border: 1px solid #222;
     box-shadow: inset 1px 1px 0 0 #ccc, inset -1px -1px 0 0 #888;
 	flex: 30%;
+	padding-top: 5px;
+	padding-left: 15px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+div.about-item {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2px;
+}
+
+div.about-programs-progress-bar {
+	background-image: white;
+	box-shadow: inset 1px 1px 0 0 #ccc, inset -1px -1px 0 0 #888;
+	width: 10%;
+	height: 20px;
 }
 
 #about-banner-image {
 	width: 100%;
+}
+
+#mathjax-icon {
+	width: 12px;
+	height: 12px;
 }
 
 p.about-info-text {
@@ -268,4 +339,17 @@ ul.about-info-text {
 	font-family: "Geneva";
 	list-style-type: circle;
 	margin-bottom: 2px;
+}
+
+p.about-programs-text {
+	font-size: 12px;
+	font-family: "Geneva";
+	margin-left: 10px;
+	margin-top: 0;
+	margin-bottom: 3px;
+	flex: 15%;
+}
+
+p.about-programs-title {
+	flex: 30%;
 }
