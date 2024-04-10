@@ -7,7 +7,7 @@ nav {
     z-index: 9900;
 }
 
-ul.menu {
+ul.menu, ul.apple-menu {
     font-family: "Virtue";
     display: none;
     float: left;
@@ -50,6 +50,12 @@ ul.menu {
 .nav-list li:hover ul.menu li {
     clear: both;
     padding: 0.25em 1em 1.5em 2em;
+    width: 100%;
+}
+
+.nav-list li:hover ul.apple-menu li {
+    clear: both;
+    padding: 1px 1em 1.5em 2em;
     width: 100%;
 }
 

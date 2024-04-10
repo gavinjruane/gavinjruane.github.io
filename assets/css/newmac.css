@@ -70,6 +70,10 @@ img.menubaricon {
 	height: 16px;
 }
 
+.menu-internal-icon {
+	margin-right: 20px;
+}
+
 /*Edits to Mac UI*/
 
 span.window-title {
