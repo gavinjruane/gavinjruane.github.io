@@ -119,10 +119,12 @@
 	                	</div>
                 		<div id="select-box" class="isc-select-box">
                 			<details class="isc-select-box">
-                				<summary>Chapter 1</summary>
+                				<summary>Chapter 7</summary>
+                				<a href="#" onclick="updateBookshelfIframe('./calculus/7/7-1.html')">Chapter 1</a>
+                				<a href="#" onclick="updateBookshelfIframe('./calculus/7/7-2.html')">Chapter 2</a>
                 			</details>
                 			<details class="isc-select-box">
-                				<summary>Chapter 1</summary>
+                				<summary>Nothing</summary>
                 			</details>
                 		</div>
                 		<form action="">
@@ -191,5 +193,10 @@
             </div>
         </div>
         <script src="./assets/scripts/platinum.js"></script>
+        <script>
+            function updateBookshelfIframe(url) {
+                document.getElementById("isc-content-displayer").src = url;
+            }
+        </script>
 	</body>
 </html>

@@ -203,6 +203,7 @@ details.isc-select-box {
 	margin: 8px;
 	font-family: "Geneva";
 	font-size: 12px;
+	display: flex;
 }
 
 #isc-pseudosearch {
