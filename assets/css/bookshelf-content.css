@@ -20,3 +20,11 @@ body {
 h3 {
     font-size: 1rem;
 }
+
+h4.section-number {
+	margin-bottom: 0;
+}
+
+h2.section-header {
+	margin-top: 5px;
+}

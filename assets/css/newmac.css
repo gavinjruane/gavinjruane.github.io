@@ -206,6 +206,10 @@ details.isc-select-box {
 	display: flex;
 }
 
+ul.isc-select-box {
+	font-size: 12px;
+}
+
 #isc-pseudosearch {
 	width: 100%;
 	font-size: 12px;
