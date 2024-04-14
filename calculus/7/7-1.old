@@ -18,13 +18,67 @@
     ">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../../assets/css/bookshelf-content.css">
+    <link rel="stylesheet" href="../../assets/css/apache.css">
+    <link rel="stylesheet" href="../../assets/css/github-syntax.css">
 
 </head>
 
 <body>
 
   <div class="container">
+    <header id="header">
+        <div id= post-title>
+            <h1>L'hopital's rule</h1>
+        </div>
+    </header>
+
+    <hr/>
+
+    <div class="apache-nav">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <img src="../../images/icons/back.png"/>
+                    <a href="../chapters.html">Back</a>
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/folder.png"/>
+                    calculus
+                <td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    L'hopital's rule
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../../images/icons/blank.png"/>
+                    <img src="../../images/icons/layout.png"/>
+                    <a href="./7-1-1.html">Limits with "h"</a>
+                <td>
+                <td>
+                    <span style="float:right;">
+                    17 May 2022
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div class="post-container">
+      <article id = "post">
         <h3>Key ideas</h3>
         <h4 style="text-align: center;"><em>Fundamental idea</em></h4>
         \[\lim_{x \to a}f(x)=L\]
@@ -102,9 +156,16 @@
             &=\frac{1}{4}
             \end{align}\]
         </ol>
+      </article>
     </div>
 
+    <h5>Site style derived from <a href="https://brokenco.de/">rtyler</a></h5>
+<h5>Calculus problems and notes derived from <a href="https://kquattrin.com/">Dr. Kevin Quattrin, EdD</a></h5>
+<h5>Some problems and examples derived from Mr. Charles Stanley.</h5>
+
     
-  </div>
+  </div><footer class= "footer">
+</footer>
+
 </body>
 </html>
