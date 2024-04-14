@@ -210,6 +210,10 @@ ul.isc-select-box {
 	font-size: 12px;
 }
 
+li.isc-select-box {
+	margin-bottom: 3px;
+}
+
 #isc-pseudosearch {
 	width: 100%;
 	font-size: 12px;
