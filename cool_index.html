@@ -46,8 +46,8 @@
                                 Bookshelf
                             </li>
                             <hr />
-                            <li id="menu-yolo">
-                                In progress...
+                            <li id="menu-applecd">
+                                AppleCD
                             </li>
                             <li id="menu-sadmac">
                                 In progress...
@@ -133,6 +133,7 @@
                                     <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-3.html')">1.3: Defining Systems of Linear Equations</a></li>
                                     <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/2-1.html')">2.1: Elementary Row Operations and Row-Echelon Matrices</a></li>
                                     <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/2-2.html')">2.2: Inverse Matrices</a></li>
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/4-4.html')">4.4: Spanning Sets</a></li>
                 				</ul>
                 			</details>
                 		</div>
@@ -156,7 +157,82 @@
             </div>
         </div>
 
-        <div id="about" class="content" data-window-icon="img/about.png" data-window-name="About This Computer" style="left: 25%; top: 25%;">
+        <div id="applecd" class="content draggable-window hidden" data-window-icon="img/x.png" data-window-name="AppleCD" style="left: 25%; top: 25%; z-index: 1300;">
+            <div class="control-box close-box">
+                <a class="control-box-inner"></a>
+            </div>
+            <div class="control-box zoom-box">
+                <div class="control-box-inner">
+                    <div class="zoom-box-inner"></div>
+                </div>
+            </div>
+            <div class="control-box window-collapse">
+                <div class="control-box-inner">
+                    <div class="window-collapse-inner"></div>
+                </div>
+            </div>
+            <h1 class="titlebar"><span class="window-title">AppleCD Audio Player</span></h1>
+            <div class="inner bookshelf">
+                <div id="inner-select-col" class="inner-column">
+                	<div id="isc-title" class="isc-title-content">
+                		<span id="icon_drop-down" class="material-icons">arrow_drop_down</span>
+                		<p class="isc-title-content">All Books</p>
+                	</div>
+                	<div id="isc-rest">
+                		<div class="isc-header">
+	                		<p id="isc-header-text" class="isc-header-content">I want to find:</p>
+		                		<input type="radio" class="isc-radio" name="age" value="30">
+	  							<label class="isc-radio" for="age1">articles about</label><br>
+	  							<input type="radio" class="isc-radio" name="age" value="30">
+	  							<label class="isc-radio" for="age1">all articles containing the word(s)</label><br>
+	                		<form action="">
+								<input type="text" id="isc-pseudosearch" name="fname" placeholder="This search box doesn't work.">
+								<button type="button" id="isc-button" onclick="alert('Hello world!')">Search Now...</button>
+							</form>
+							<br>
+							<p id="isc-header2-text">Articles</p>
+	                	</div>
+                		<div id="select-box" class="isc-select-box">
+                			<!--<details class="isc-select-box">
+                				<summary>Chapter 7</summary>
+                				<ul class="isc-select-box">
+                                    <li><a href="#" onclick="updateBookshelfIframe('./calculus/7/7-1.html')">Chapter 1</a></li>
+                                    <li><a href="#" onclick="updateBookshelfIframe('./calculus/7/7-2.html')">Chapter 2</a></li>
+                				</ul>
+                			</details>-->
+                			<details class="isc-select-box">
+                				<summary>Linear Analysis</summary>
+                				<ul class="isc-select-box">
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-1.html')">1.1: Matrices and Systems of Equations</a></li>
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-2.html')">1.2: Matrix Algebra</a></li>
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-3.html')">1.3: Defining Systems of Linear Equations</a></li>
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/2-1.html')">2.1: Elementary Row Operations and Row-Echelon Matrices</a></li>
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/2-2.html')">2.2: Inverse Matrices</a></li>
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/4-4.html')">4.4: Spanning Sets</a></li>
+                				</ul>
+                			</details>
+                		</div>
+                		<form action="">
+							<button type="button" id="advsearch-button" onclick="alert('Hello world!')">Advanced Search</button>
+						</form>
+                	</div>
+                </div>
+                <div id="inner-content-col" class="inner-column">
+                	<div id="isc-subtitle" class="isc-title-content">
+                		<p class="isc-title-content">Calculus</p>
+                	</div>
+                	<div id="isc-content-rest">
+						<iframe id="isc-content-displayer" src="./content/basic.html"></iframe>
+                	</div>
+                	<div id="isc-content-bottombar">
+
+                	</div>
+                </div>
+                <!-- <button class="command_button boot-button">Close</button> -->
+            </div>
+        </div>
+
+        <div id="about" class="content" data-window-icon="img/about.png" data-window-name="About This Computer" style="left: 22%; top: 22%;">
             <!--<div class="control-box close-box">
                 <a class="control-box-inner"></a>
             </div>-->

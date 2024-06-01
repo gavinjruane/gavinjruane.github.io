@@ -177,7 +177,7 @@ function enableNav() {
 
     // Enable menu items to be clickable by default and open a windows/app with the same name
     jQuery(".nav-list li ul li,  #app-menu li ul li").on("click", function () {
-        console.log();
+        console.log(this);
         if (!jQuery(this).hasClass("disabled")) {
             jQuery("#sound_window_open").trigger("play");
             jQuery("#" + jQuery(this).get(0).id.split("-")[1])
