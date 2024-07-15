@@ -415,6 +415,15 @@ div.content.noscroll .inner {
     height: 500px;
 }
 
+#contact .inner {
+    left: 20px;
+    top: 30px;
+}
+#contact .inner {
+    width: 400px;
+    height: 100px;
+}
+
 .alert {
   z-index: 99999998 !important;
   border: 2px #dc5341 outset;
