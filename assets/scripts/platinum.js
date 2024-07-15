@@ -180,6 +180,7 @@ function enableNav() {
         console.log(this);
         if (!jQuery(this).hasClass("disabled")) {
             jQuery("#sound_window_open").trigger("play");
+            console.log("#" + jQuery(this).get(0).id.split("-")[1]);
             jQuery("#" + jQuery(this).get(0).id.split("-")[1])
                 .removeClass("hidden")
                 .css("z-index", "9000");
