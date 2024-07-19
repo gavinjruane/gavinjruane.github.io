@@ -366,3 +366,33 @@ p.about-programs-text {
 p.about-programs-title {
 	flex: 30%;
 }
+
+/* General Window Setup */
+
+#about {
+	left: 25%;
+	top: 25%;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+
+	#about {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#about .inner {
+		height: 100%;
+	}
+
+	div.about-banner, div.about-info, div.about-programs {
+		flex: 0;
+	}
+}
