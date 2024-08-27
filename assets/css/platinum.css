@@ -424,6 +424,22 @@ div.content.noscroll .inner {
     height: 100px;
 }
 
+#mobile_nav .inner {
+    left: 20px;
+    top: 30px;
+}
+#mobile_nav .inner {
+    height: 300px;
+}
+
+#mobile_nav {
+    width: 90%;
+}
+
+ul.sublist {
+    list-style-type: circle;
+}
+
 .alert {
   z-index: 99999998 !important;
   border: 2px #dc5341 outset;

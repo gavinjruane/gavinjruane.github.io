@@ -1,3 +1,5 @@
+// add a function checking screen size; if mobile (use params in index.html), grab #about window and addClass hidden
+
 function isMobile() {
     try {
         document.createEvent("TouchEvent");
@@ -176,7 +178,7 @@ function enableNav() {
     });
 
     // Enable menu items to be clickable by default and open a windows/app with the same name
-    jQuery(".nav-list li ul li,  #app-menu li ul li").on("click", function () {
+    jQuery(".nav-list li ul li, .nav-list-mob li ul li, #app-menu li ul li").on("click", function () {
         console.log(this);
         if (!jQuery(this).hasClass("disabled")) {
             jQuery("#sound_window_open").trigger("play");

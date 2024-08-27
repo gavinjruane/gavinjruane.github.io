@@ -31,7 +31,7 @@
 				<div class="lmbc menubarobject"><p class="lmbc">Archive</p></div>
 				<div class="lmbc menubarobject"><p class="lmbc">Special</p></div>
 			</div>
-			
+
 		</div> -->
 		<div id="menu-bar" class="nav-wrapper">
 			<div id="left-menu-bar-container" class="lmbc">
@@ -40,6 +40,7 @@
                         <img id="logo-icon" src="./assets/icons/apple.png" />
                         <ul class="apple-menu command_button">
                             <li id="menu-about"><img src="./assets/icons/apple.png" class="menu-internal-icon" width="16" alt="About" />About</li>
+                            <li id="menu-mobile_nav">Navigation</li>
                         </ul>
                     </li>
                     <li>
@@ -141,10 +142,13 @@
                 				<ul class="isc-select-box">
                                     <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-1.html')">1.1: Matrices and Systems of Equations</a></li>
                                     <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-2.html')">1.2: Matrix Algebra</a></li>
-                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-3.html')">1.3: Defining Systems of Linear Equations</a></li>
-                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/2-1.html')">2.1: Elementary Row Operations and Row-Echelon Matrices</a></li>
-                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/2-2.html')">2.2: Inverse Matrices</a></li>
                 				</ul>
+                			</details>
+                			<details class="isc-select-box">
+                                <summary>Pre-Calculus</summary>
+                                <ul class="isc-select-box">
+                                    <li class="isc-select-box"><a href="#" onclick="updateBookshelfIframe('./content/1-1-algebraic-expressions.html')">1.1: Algebraic Expressions and Factoring</a></li>
+                                </ul>
                 			</details>
                 		</div>
                 		<form action="">
@@ -210,6 +214,7 @@
 					</div>
 					<!--<div class="about-programs-progress-bar"></div>-->
                 </div>
+                <button class="command_button boot-button mobile_close">Close</button>
             </div>
         </div>
 
@@ -232,6 +237,44 @@
                 <div class="about-info">
                 	<p class="about-info-text">I'd love to hear from you! Feel free to ask me any questions about my website or my projects.</p>
                 	<p class="about-info-text">Please email me at <strong><a href="mailto:me@gavinruane.me">me@gavinruane.me</a></strong>, and I will respond to you as soon as possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile_nav" class="content draggable-window" data-window-icon="img/about.png" data-window-name="mobile_nav" style="top: 70px; z-index: 1900;">
+            <div class="control-box close-box">
+                <a class="control-box-inner"></a>
+            </div>
+            <div class="control-box zoom-box">
+                <div class="control-box-inner">
+                    <div class="zoom-box-inner"></div>
+                </div>
+            </div>
+            <div class="control-box window-collapse">
+                <div class="control-box-inner">
+                    <div class="window-collapse-inner"></div>
+                </div>
+            </div>
+            <h1 class="titlebar"><span class="window-title">Navigation</span></h1>
+            <div class="inner about_panel">
+                <div class="about-info">
+                	<p class="about-info-text">Hi! I'm Gavin Ruane, and this is my personal website. Please use the navigation menu below to get around my site.</p>
+
+                	<ul class="nav-list-mob">
+                        <li>Welcome</li>
+                        <li><ul class="nav-list-mob sublist">
+                            <li id="menu-about">About</li>
+                            <li id="menu-mobile_nav">Navigation</li>
+                        </ul></li>
+                        <li>Projects</li>
+                        <li><ul class="nav-list-mob sublist">
+                            <li id="menu-bookshelf">Bookshelf</li>
+                        </ul></li>
+                        <li>Special</li>
+                        <li><ul class="nav-list-mob sublist">
+                            <li id="menu-contact">Contact Me</li>
+                        </ul></li>
+                    </ul>
                 </div>
             </div>
         </div>

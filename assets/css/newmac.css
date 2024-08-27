@@ -367,11 +367,19 @@ p.about-programs-title {
 	flex: 30%;
 }
 
+.mobile_close {
+	display: none;
+}
+
 /* General Window Setup */
 
 #about {
 	left: 25%;
 	top: 25%;
+}
+
+#mobile_nav {
+	display: none;
 }
 
 /* Responsive */
@@ -382,6 +390,7 @@ p.about-programs-title {
 	}
 
 	#about {
+		/*display: none;*/
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -394,5 +403,16 @@ p.about-programs-title {
 
 	div.about-banner, div.about-info, div.about-programs {
 		flex: 0;
+	}
+
+	.mobile_close {
+		display: inline-block;
+		margin-top: 40px;
+		font-family: "Virtue";
+		font-size: 12px;
+	}
+
+	#mobile_nav {
+		display: block;
 	}
 }
