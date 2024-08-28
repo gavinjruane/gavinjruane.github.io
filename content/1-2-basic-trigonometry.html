@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>
+
+            Basic Trigonometry
+
+    </title>
+    <meta name="description" content="
+     my fun website
+    ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/bookshelf-content.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h4 class="section-number">1.2</h4>
+        <h2 class="section-header">Basic Trigonometry</h2>
+
+        <h4>Trigonometric Values Using Points</h4>
+        <p>Some questions will provide you with a point on the terminal side of an angle, and you will be expected to find the exact values of each of the six trigonometric functions with this information.</p>
+        <p>Recall the meaning of each trignonometric function in terms of a triangle. See the following table for these definitions.</p>
+        <table class="tg"><thead>
+            <tr>
+                <th class="tg-e6q7">\( \sin \)</th>
+                <th class="tg-mim8">\(\frac{\text{opposite}}{\text{hypotenuse}}\)<br></th>
+                <th class="tg-7nqk">\( \cos \)</th>
+                <th class="tg-z9od">\(\frac{\text{adjacent}}{<br>\text{hypotenuse}<br>}\)</th>
+            </tr></thead>
+            <tbody>
+            <tr>
+                <td class="tg-e6q7">\( \tan \)</td>
+                <td class="tg-mim8">\(\frac{\text{opposite}}{<br>\text{adjacent}<br>}\)</td>
+                <td class="tg-7nqk">\( \sec \)</td>
+                <td class="tg-z9od">\(\frac{\text{hypotenuse}}{<br>\text{adjacent}<br>}\)</td>
+            </tr>
+            <tr>
+                <td class="tg-e6q7">\( \csc \)</td>
+                <td class="tg-mim8">\(\frac{\text{hypotenuse}}{<br>\text{opposite}<br>}\)</td>
+                <td class="tg-7nqk">\( \cot \)</td>
+                <td class="tg-z9od">\(\frac{\text{adjacent}}{<br>\text{opposite}<br>}\)</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ol>
+            <li>If \( (-7,24) \) is a point on the terminal side of an angle A, find the exact values of each trignonometric function.</li>
+
+            First, let's find the hypotenuse of the "triangle" formed by the given point.
+            \[\begin{align}
+            x^2+y^2&=r^2 \\
+            (-7)^2+24^2&=r^2 \\
+            r&=25
+            \end{align}\]
+
+            Next, we can simply plug in the three numbers we now have (\( -7,24,25 \)) to the trigonometric functions.
+            \[\begin{align}
+            \sin A&=\frac{24}{25} \\
+            \cos A&=\frac{-7}{25} \\
+            \tan A&=\frac{-24}{7} \\
+            \sec A&=\frac{-25}{7} \\
+            \csc A&=\frac{25}{24} \\
+            \cot A&=\frac{-7}{24}
+            \end{align}\]
+
+            <li>If \( \cot B=\frac{\sqrt{11}}{5} \), and B is in Quadrant III, find the exact values of each of the following.</li>
+
+            We know that \(\cot\) is \( \frac{\text{adjacent}}{\text{opposite}} \), so we can use the values given above in the distance formula to find the hypotenuse.
+            \[\begin{align}
+            x^2+y^2&=r^2 \\
+            \sqrt{11}^2+5^2&=r^2 \\
+            r&=6
+            \end{align}\]
+
+            Next, we can simply plug in the three numbers we now have (\( 5,6,\sqrt{11} \)) to the trigonometric functions.
+            \[\begin{align}
+            \sin A&=\frac{-5}{6} \\
+            \cos A&=\frac{\sqrt{11}}{6} \\
+            \tan A&=\frac{5}{\sqrt{11}} \\
+            \sec A&=\frac{-6}{\sqrt{11}} \\
+            \csc A&=\frac{-6}{5} \\
+            \cot A&=\frac{\sqrt{11}}{5}
+            \end{align}\]
+
+        </ol>
+
+        <h4>Unit Circles</h4>
+        <p>A <strong><em>unit circle</em></strong> is a graphical tool used in trigonometry used to work with degrees, radians, and exact values. Unit circles are useful for understanding the relationship between trigonometry, triangles, and angles.</p>
+        <img style="width: 100%;" src="https://mathematicalmysteries.org/wp-content/uploads/2021/11/1280px-unit_circle_angles_color.svg_.png">
+        <p><a href="https://mathematicalmysteries.org/wp-content/uploads/2021/11/1280px-unit_circle_angles_color.svg_.png">Source</a></p>
+        <p>Notice some key facts about the unit circle in the picture above:</p>
+        <ul>
+            <li>The circle has a radius of exactly \(1\). You can see this from any of the points along the axes.</li>
+            <li>The angles are represented in both <strong>degrees</strong> and <strong>radians</strong>. Degrees are more commonly used in geometry while radians are used more in calculus, trigonometry, and physics.</li>
+            <li>There are various points highlighted around the circle. These points correspond with an angle, and they are used in various ways.</li>
+        </ul>
+
+        <ol>
+            <li value="3">What is \( \cos\frac{7\pi}{6} \)?</li>
+            \( \frac{-\sqrt{3}}{2} \)
+            <li>What is \( \sec\frac{7\pi}{4} \)?</li>
+            \( \sqrt{2} \)
+        </ol>
+
+        <h4>Converting Radians and Degrees</h4>
+        <p>It is often useful to convert between radians and degrees.</p>
+        <p>To convert to radians from degrees, multiply the degree value by \( \frac{\pi}{180} \).</p>
+        <p>To convert to degrees from radians, multiply the radian value by \( \frac{180}{\pi} \).</p>
+
+    </div>
+
+</body>
+</html>
