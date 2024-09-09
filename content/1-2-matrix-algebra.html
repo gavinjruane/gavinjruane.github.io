@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link rel="stylesheet" href="./../assets/css/fontsetup.css">
+    <link rel="stylesheet" href="./../assets/css/index.css">
+    <link rel="stylesheet" href="./../assets/css/content.css">
+
+    <title></title>
+  </head>
+  <body>
+    <header class="header">
+        <h1 class="header">gavin ruane</h1>
+        <h3 class="header">student</h3>
+    </header>
+    <main>
+        <div class="main-div">
+            <div class="nav-div">
+                <div class="main-nav-div">
+                    <button class="nav-button-style"><a href="./../new.html" class="primary-accordion-link">home</a></button>  <!--can make button text link if needed-->
+                    <div class="panel">
+                    <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">bookshelf</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="./1-1-algebraic-expressions.html">pre-calculus</a></p>
+                    <p><a class="accordion-link" href="./1-1-matrices-and-systems.html">linear analysis</a></p>
+                    </div>
+
+                    <button class="accordion">contact</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="mailto:me@gavinruane.me">email</a></p>
+                    </div>
+                </div>
+
+                <div class="sub-nav-div">
+
+                    <button class="accordion-sub">matrix algebra</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="./1-1-matrices-and-systems.html">matrices and systems</a></p>
+                    <p><a class="accordion-link" href="./1-2-matrix-algebra.html">matrix algebra</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content-div">
+                <h4 class="content-heading">1.2</h4>
+                <h2 class="content-heading">Matrix Algebra</h2>
+                <h4>Scalar Multiplication</h4>
+                <p>Given a matrix \(A\) of size \( (m\times n) \), a scalar k can scale a matrix. This is accomplished by scaling each element by the scalar k.</p>
+                <span>\[k\cdot A=[ka_{ij}]\]</span>
+                <ol>
+                    <li>\(
+                    3\begin{bmatrix}
+                    1 & 0 & -1 \\
+                    2 & 4 & 6 \\
+                    \end{bmatrix}\)</li>
+                    <span>\[\begin{align}
+                    A&=\begin{bmatrix}
+                    3(1) & 3(0) & 3(-1) \\
+                    3(2) & 3(4) & 3(6) \\
+                    \end{bmatrix} \\
+                    &=\begin{bmatrix}
+                    3 & 0 & -3 \\
+                    6 & 12 & 18 \\
+                    \end{bmatrix}
+                    \end{align}\]</span>
+                </ol>
+
+                <h4>Addition</h4>
+                <p>Given \(A\) and \(B\), matrices of the same size \( (m\times n) \), addition is given by:</p>
+                \[ A+B=[a_{ij}+b_{ij}] \]
+                <ol>
+                    <li value="2">\(
+                    \begin{bmatrix}
+                    2 & 0 \\
+                    -1 & 4 \\
+                    \end{bmatrix}
+                    +
+                    \begin{bmatrix}
+                    6 & 5 \\
+                    3 & 7 \\
+                    \end{bmatrix}\)</li>
+
+                    <span>\[A=\begin{bmatrix}
+                    8 & 5 \\
+                    2 & 11 \\
+                    \end{bmatrix}\]</span>
+                </ol>
+
+                <h4>Matrix Algebra Rules</h4>
+                <p>Just like traditional algebra, matrix algebra has special rules defining how and when computations are performed.</p>
+                <ol type="i">
+                    <li>Commutative property: \(A+B=B+A\)</li>
+                    <li>Associative property: \(A+(B+C)=(A+B)+C\)</li>
+                    <li>Unit identity: \(A\cdot 1=A\)</li>
+                    <li>Distributive properties: \(s(A+B)=sA+sB\) and \((s+t)(A)=sA+tA\)</li>
+                    <li>Additional associative property: \((st)(A)=s(tA)\)</li>
+                </ol>
+
+                <h4>Subtraction</h4>
+                <p>Given \(A + B\), both \((m\times n)\) matrices of the exact same size, subtraction is given by:</p>
+                <span>\[ A-B=A+(-1\cdot B) \]</span>
+                <p>A <strong><em>zero matrix</em></strong> is given by:</p>
+                <span>\[\begin{bmatrix}
+                A-A=0_{m\times n}
+                \end{bmatrix}\]<span>
+                <p>If no subscript is provided to a zero matrix identifier, the zero matrix is adjusted to be whatever size is needed.</p>
+                <span>\[A+0=A\]</span>
+
+                <h4>Vector Multiplication</h4>
+                <p>Vector multiplication, or a vector dot product, is given formally by:</p>
+                <span>\[\begin{align}
+                \overrightarrow v \cdot \overrightarrow w &= \langle v_1,v_2,v_3\rangle \cdot \langle w_1,w_2,w_3 \rangle \\
+                &=v_1w_1 + v_2w_2 + v_3w_3 \\
+                &=|\overrightarrow v||\overrightarrow w|\cos\theta
+                \end{align}\]</span>
+                <p>In a matrix context, this will be a row dot-producted with a column.</p>
+            </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Gavin Ruane. Site last updated September 2024.</p>
+    </footer>
+  </body>
+  <script>
+    var acc = document.querySelectorAll(".accordion-sub, .accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+  </script>
+</html>

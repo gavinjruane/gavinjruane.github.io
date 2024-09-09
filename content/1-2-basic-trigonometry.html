@@ -1,136 +1,191 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="">
   <head>
-    <html lang="en-US">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <title>
+    <link rel="stylesheet" href="./../assets/css/fontsetup.css">
+    <link rel="stylesheet" href="./../assets/css/index.css">
+    <link rel="stylesheet" href="./../assets/css/content.css">
 
-            Basic Trigonometry
+    <title></title>
+  </head>
+  <body>
+    <header class="header">
+        <h1 class="header">gavin ruane</h1>
+        <h3 class="header">student</h3>
+    </header>
+    <main>
+        <div class="main-div">
+            <div class="nav-div">
+                <div class="main-nav-div">
+                    <button class="nav-button-style"><a href="./../new.html" class="primary-accordion-link">home</a></button>  <!--can make button text link if needed-->
+                    <div class="panel">
+                    <p>Lorem ipsum...</p>
+                    </div>
 
-    </title>
-    <meta name="description" content="
-     my fun website
-    ">
+                    <button class="accordion">bookshelf</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="#">pre-calculus</a></p>
+                    <p><a class="accordion-link" href="./1-1-matrices-and-systems.html">linear analysis</a></p>
+                    </div>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/bookshelf-content.css">
+                    <button class="accordion">contact</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="mailto:me@gavinruane.me">email</a></p>
+                    </div>
+                </div>
 
-</head>
+                <div class="sub-nav-div">
 
-<body>
+                    <button class="accordion-sub">factoring & trigonometry</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="./1-1-algebraic-expressions.html">algebraic expressions and factoring</a></p>
+                    <p><a class="accordion-link" href="">basic trigonometry</a></p>
+                    </div>
 
-    <div class="container">
-        <h4 class="section-number">1.2</h4>
-        <h2 class="section-header">Basic Trigonometry</h2>
+                    <button class="accordion-sub">derivation</button>
+                    <div class="panel">
+                    <p><a class="accordion-link" href="#">coming soon...</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-div">
+                <h4 class="content-heading">1.2</h4>
+                <h2 class="content-heading">Basic Trigonometry</h2>
 
-        <h4>Trigonometric Values Using Points</h4>
-        <p>Some questions will provide you with a point on the terminal side of an angle, and you will be expected to find the exact values of each of the six trigonometric functions with this information.</p>
-        <p>Recall the meaning of each trignonometric function in terms of a triangle. See the following table for these definitions.</p>
-        <table class="tg"><thead>
-            <tr>
-                <th class="tg-e6q7">\( \sin \)</th>
-                <th class="tg-mim8">\(\frac{\text{opposite}}{\text{hypotenuse}}\)<br></th>
-                <th class="tg-7nqk">\( \cos \)</th>
-                <th class="tg-z9od">\(\frac{\text{adjacent}}{<br>\text{hypotenuse}<br>}\)</th>
-            </tr></thead>
-            <tbody>
-            <tr>
-                <td class="tg-e6q7">\( \tan \)</td>
-                <td class="tg-mim8">\(\frac{\text{opposite}}{<br>\text{adjacent}<br>}\)</td>
-                <td class="tg-7nqk">\( \sec \)</td>
-                <td class="tg-z9od">\(\frac{\text{hypotenuse}}{<br>\text{adjacent}<br>}\)</td>
-            </tr>
-            <tr>
-                <td class="tg-e6q7">\( \csc \)</td>
-                <td class="tg-mim8">\(\frac{\text{hypotenuse}}{<br>\text{opposite}<br>}\)</td>
-                <td class="tg-7nqk">\( \cot \)</td>
-                <td class="tg-z9od">\(\frac{\text{adjacent}}{<br>\text{opposite}<br>}\)</td>
-            </tr>
-            </tbody>
-        </table>
-        <p>The <strong>Pythagorean Theorem</strong>, sometimes known as the distance formula, can determine the distance between two points in a Cartesian plane or the hypotenuse of a triangle.</p>
-        <p>\[ x^2+y^2=c^2 \]</p>
+                <h4>Trigonometric Values Using Points</h4>
+                <p>Some questions will provide you with a point on the terminal side of an angle, and you will be expected to find the exact values of each of the six trigonometric functions with this information.</p>
+                <p>Recall the meaning of each trignonometric function in terms of a triangle. See the following table for these definitions.</p>
+                <table class="tg"><thead>
+                    <tr>
+                        <th class="tg-e6q7">\( \sin \)</th>
+                        <th class="tg-mim8">\(\frac{\text{opposite}}{\text{hypotenuse}}\)<br></th>
+                        <th class="tg-7nqk">\( \cos \)</th>
+                        <th class="tg-z9od">\(\frac{\text{adjacent}}{<br>\text{hypotenuse}<br>}\)</th>
+                    </tr></thead>
+                    <tbody>
+                    <tr>
+                        <td class="tg-e6q7">\( \tan \)</td>
+                        <td class="tg-mim8">\(\frac{\text{opposite}}{<br>\text{adjacent}<br>}\)</td>
+                        <td class="tg-7nqk">\( \sec \)</td>
+                        <td class="tg-z9od">\(\frac{\text{hypotenuse}}{<br>\text{adjacent}<br>}\)</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-e6q7">\( \csc \)</td>
+                        <td class="tg-mim8">\(\frac{\text{hypotenuse}}{<br>\text{opposite}<br>}\)</td>
+                        <td class="tg-7nqk">\( \cot \)</td>
+                        <td class="tg-z9od">\(\frac{\text{adjacent}}{<br>\text{opposite}<br>}\)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>The <strong>Pythagorean Theorem</strong>, sometimes known as the distance formula, can determine the distance between two points in a Cartesian plane or the hypotenuse of a triangle.</p>
+                <p>\[ x^2+y^2=c^2 \]</p>
 
-        <ol>
-            <li>If \( (-7,24) \) is a point on the terminal side of an angle A, find the exact values of each trignonometric function.</li>
+                <ol>
+                    <li>If \( (-7,24) \) is a point on the terminal side of an angle A, find the exact values of each trignonometric function.</li>
 
-            First, let's find the hypotenuse of the "triangle" formed by the given point.
-            \[\begin{align}
-            x^2+y^2&=r^2 \\
-            (-7)^2+24^2&=r^2 \\
-            r&=25
-            \end{align}\]
+                    <span>First, let's find the hypotenuse of the "triangle" formed by the given point.
+                    \[\begin{align}
+                    x^2+y^2&=r^2 \\
+                    (-7)^2+24^2&=r^2 \\
+                    r&=25
+                    \end{align}\]</span>
 
-            Next, we can simply plug in the three numbers we now have (\( -7,24,25 \)) to the trigonometric functions.
-            \[\begin{align}
-            \sin A&=\frac{24}{25} \\
-            \cos A&=\frac{-7}{25} \\
-            \tan A&=\frac{-24}{7} \\
-            \sec A&=\frac{-25}{7} \\
-            \csc A&=\frac{25}{24} \\
-            \cot A&=\frac{-7}{24}
-            \end{align}\]
+                    <span>Next, we can simply plug in the three numbers we now have (\( -7,24,25 \)) to the trigonometric functions.
+                    \[\begin{align}
+                    \sin A&=\frac{24}{25} \\
+                    \cos A&=\frac{-7}{25} \\
+                    \tan A&=\frac{-24}{7} \\
+                    \sec A&=\frac{-25}{7} \\
+                    \csc A&=\frac{25}{24} \\
+                    \cot A&=\frac{-7}{24}
+                    \end{align}\]</span>
 
-            <li>If \( \cot B=\frac{\sqrt{11}}{5} \), and B is in Quadrant III, find the exact values of each of the following.</li>
+                    <li>If \( \cot B=\frac{\sqrt{11}}{5} \), and B is in Quadrant III, find the exact values of each of the following.</li>
 
-            We know that \(\cot\) is \( \frac{\text{adjacent}}{\text{opposite}} \), so we can use the values given above in the distance formula to find the hypotenuse.
-            \[\begin{align}
-            x^2+y^2&=r^2 \\
-            \sqrt{11}^2+5^2&=r^2 \\
-            r&=6
-            \end{align}\]
+                    <span>We know that \(\cot\) is \( \frac{\text{adjacent}}{\text{opposite}} \), so we can use the values given above in the distance formula to find the hypotenuse.
+                    \[\begin{align}
+                    x^2+y^2&=r^2 \\
+                    \sqrt{11}^2+5^2&=r^2 \\
+                    r&=6
+                    \end{align}\]</span>
 
-            Next, we can simply plug in the three numbers we now have (\( 5,6,\sqrt{11} \)) to the trigonometric functions.
-            \[\begin{align}
-            \sin A&=\frac{-5}{6} \\
-            \cos A&=\frac{\sqrt{11}}{6} \\
-            \tan A&=\frac{5}{\sqrt{11}} \\
-            \sec A&=\frac{-6}{\sqrt{11}} \\
-            \csc A&=\frac{-6}{5} \\
-            \cot A&=\frac{\sqrt{11}}{5}
-            \end{align}\]
+                    <span>Next, we can simply plug in the three numbers we now have (\( 5,6,\sqrt{11} \)) to the trigonometric functions.
+                    \[\begin{align}
+                    \sin A&=\frac{-5}{6} \\
+                    \cos A&=\frac{\sqrt{11}}{6} \\
+                    \tan A&=\frac{5}{\sqrt{11}} \\
+                    \sec A&=\frac{-6}{\sqrt{11}} \\
+                    \csc A&=\frac{-6}{5} \\
+                    \cot A&=\frac{\sqrt{11}}{5}
+                    \end{align}\]</span>
 
-        </ol>
+                </ol>
 
-        <h4>Unit Circles</h4>
-        <p>A <strong><em>unit circle</em></strong> is a graphical tool used in trigonometry used to work with degrees, radians, and exact values. Unit circles are useful for understanding the relationship between trigonometry, triangles, and angles.</p>
-        <img style="width: 100%;" src="https://mathematicalmysteries.org/wp-content/uploads/2021/11/1280px-unit_circle_angles_color.svg_.png">
-        <p><a href="https://mathematicalmysteries.org/wp-content/uploads/2021/11/1280px-unit_circle_angles_color.svg_.png">Source</a></p>
-        <p>Notice some key facts about the unit circle in the picture above:</p>
-        <ul>
-            <li>The circle has a radius of exactly \(1\). You can see this from any of the points along the axes.</li>
-            <li>The angles are represented in both <strong>degrees</strong> and <strong>radians</strong>. Degrees are more commonly used in geometry while radians are used more in calculus, trigonometry, and physics.</li>
-            <li>There are various points highlighted around the circle. These points correspond with an angle, and they are used in various ways.</li>
-        </ul>
+                <h4>Unit Circles</h4>
+                <p>A <strong><em>unit circle</em></strong> is a graphical tool used in trigonometry used to work with degrees, radians, and exact values. Unit circles are useful for understanding the relationship between trigonometry, triangles, and angles.</p>
+                <img style="width: 100%;" src="https://mathematicalmysteries.org/wp-content/uploads/2021/11/1280px-unit_circle_angles_color.svg_.png">
+                <p><a href="https://mathematicalmysteries.org/wp-content/uploads/2021/11/1280px-unit_circle_angles_color.svg_.png">Source</a></p>
+                <p>Notice some key facts about the unit circle in the picture above:</p>
+                <ul>
+                    <li>The circle has a radius of exactly \(1\). You can see this from any of the points along the axes.</li>
+                    <li>The angles are represented in both <strong>degrees</strong> and <strong>radians</strong>. Degrees are more commonly used in geometry while radians are used more in calculus, trigonometry, and physics.</li>
+                    <li>There are various points highlighted around the circle. These points correspond with an angle, and they are used in various ways.</li>
+                </ul>
 
-        <ol>
-            <li value="3">What is \( \cos\frac{7\pi}{6} \)?</li>
-            \[ \frac{-\sqrt{3}}{2} \]
-            <li>What is \( \sec\frac{7\pi}{4} \)?</li>
-            \[ \sqrt{2} \]
-        </ol>
+                <ol>
+                    <li value="3">What is \( \cos\frac{7\pi}{6} \)?</li>
+                    \[ \frac{-\sqrt{3}}{2} \]
+                    <li>What is \( \sec\frac{7\pi}{4} \)?</li>
+                    \[ \sqrt{2} \]
+                </ol>
 
-        <h4>Converting Radians and Degrees</h4>
-        <p>It is often useful to convert between radians and degrees.</p>
-        <p>To convert to radians from degrees, multiply the degree value by \( \frac{\pi}{180} \).</p>
-        <p>To convert to degrees from radians, multiply the radian value by \( \frac{180}{\pi} \).</p>
+                <h4>Converting Radians and Degrees</h4>
+                <p>It is often useful to convert between radians and degrees.</p>
+                <p>To convert to radians from degrees, multiply the degree value by \( \frac{\pi}{180} \).</p>
+                <p>To convert to degrees from radians, multiply the radian value by \( \frac{180}{\pi} \).</p>
 
-        <ol>
-            <li value="4">Simplify this trigonometric expression: \( \tan^2\frac{\pi}{6}+\sin^2\frac{\pi}{6} \).</li>
-            \[\begin{align}
-            \tan^2\frac{\pi}{6}+\sin^2\frac{\pi}{6}&=\left(\frac{1}{\sqrt{3}}\right)^2+\left(\frac{1}{2}\right)^2 \\
-            &=\frac{1}{3}+\frac{1}{4} \\
-            &=\frac{7}{12}
-            \end{align}\]
-            Recall that \( \tan^2\frac{\pi}{6} \) means \( (\tan\frac{\pi}{6})^2 \).
-        </ol>
+                <ol>
+                    <li value="4">Simplify this trigonometric expression: \( \tan^2\frac{\pi}{6}+\sin^2\frac{\pi}{6} \).</li>
+                    <span>\[\begin{align}
+                    \tan^2\frac{\pi}{6}+\sin^2\frac{\pi}{6}&=\left(\frac{1}{\sqrt{3}}\right)^2+\left(\frac{1}{2}\right)^2 \\
+                    &=\frac{1}{3}+\frac{1}{4} \\
+                    &=\frac{7}{12}
+                    \end{align}\]
+                    Recall that \( \tan^2\frac{\pi}{6} \) means \( (\tan\frac{\pi}{6})^2 \).</span>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Gavin Ruane. Site last updated September 2024.</p>
+    </footer>
+  </body>
+  <script>
+    var acc = document.querySelectorAll(".accordion-sub, .accordion");
+    var i;
 
-    </div>
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
 
-</body>
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+  </script>
 </html>

@@ -1,0 +1,117 @@
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 100px 200px 100px 200px;
+    background-color: #F8F4E9;
+}
+
+p, li, span, th, td {
+    color: black;
+}
+
+/* header */
+
+h1.header {
+    color: #005500;
+    margin-bottom: 0;
+}
+
+h3.header {
+    color: #005500;      /* maybe change this later? make it a darker green? */
+    margin-top: 0;
+}
+
+/* main */
+
+.main-div {
+    display: flex;
+}
+
+.nav-div {
+    padding: 3px;
+    /*flex-basis: 25%;*/
+    width: 200px;
+    height: 100%;
+}
+
+.main-nav-div {
+    background-color: #005500;
+    color: #F8F4E9;
+    border: 2px solid #005500;
+}
+
+.sub-nav-div {
+    background-color: #d4d1c8;
+    margin-top: 20px;
+    border: 2px solid #d4d1c8;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion, .nav-button-style {
+  background-color: #005500;
+  color: #F8F4E9;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+}
+
+.accordion-sub {
+    background-color: #d4d1c8;
+    color: #000;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+a.accordion-link {
+    color: #005500;
+    text-decoration: none;
+}
+
+a.primary-accordion-link {
+    color: #F8F4E9;
+    text-decoration: none;
+}
+
+a.accordion-link:hover {
+    text-decoration: underline;
+}
+
+a.primary-accordion-link:hover {
+    text-decoration: underline;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover, .nav-button-style:hover {
+    background-color: #eae6dc;
+    color: #005500;
+
+    a.primary-accordion-link {
+        color: #005500;
+    }
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 12px;
+  background-color: #F8F4E9;
+  color: #005500;
+  display: none;
+  overflow: hidden;
+}
+
+.content-div {
+    color: #005500;
+    margin-left: 20px;
+    max-width: 70%;
+    /*flex-basis: 75%;*/
+}
