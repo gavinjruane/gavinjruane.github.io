@@ -22,6 +22,10 @@ h3.header {
 
 /* main */
 
+main {
+	display: flex;
+}
+
 .main-div {
     display: flex;
 }
