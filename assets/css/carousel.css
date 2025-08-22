@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.carousel-item {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  /* position: absolute; */
+  width: auto;
+  margin-top: 22px;
+  padding: 20px;
+  color: #005500;
+  font-weight: bold;
+  font-size: 18px;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #005500;
+  color: #F8F4E9;
+}
+
+/* Caption text */
+.text {
+  color: #005500;
+  font-size: 15px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link rel="stylesheet" href="./../../assets/css/fontsetup.css">
+    <link rel="stylesheet" href="./../../assets/css/index.css">
+    <link rel="stylesheet" href="./../../assets/css/content.css">
+    <link rel="stylesheet" href="./../../assets/css/carousel.css">
+
+    <title></title>
+  </head>
+  <body>
+    <header class="header">
+        <h1 class="header">gavin ruane</h1>
+        <h3 class="header">student</h3>
+    </header>
+    <main>
+      <div class="nav-div">
+        <div class="main-nav-div">
+          <button class="nav-button-style"><a href="../../index.html" class="primary-accordion-link">home</a></button>  <!--can make button text link if needed-->
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="nav-button-style"><a href="./../work.html" class="primary-accordion-link">photo work</a></button>  <!--can make button text link if needed-->
+
+          <button class="accordion">bookshelf</button>
+          <div class="panel">
+            <p><a class="accordion-link" href="./../content/1-1-algebraic-expressions.html">pre-calculus</a></p>
+            <p><a class="accordion-link" href="./../content/1-1-matrices-and-systems.html">linear analysis</a></p>
+          </div>
+
+          <button class="accordion">contact</button>
+          <div class="panel">
+            <p><a class="accordion-link" href="mailto:me@gavinruane.me">email</a></p>
+          </div>
+        </div>
+        
+        <div class="sub-nav-div">
+            <button class="accordion-sub">art 122</button>
+            <div class="panel">
+              <p><a class="accordion-link" href="#">elementary school</a></p>
+              <p><a class="accordion-link" href="./neighborhood.html">neighborhood</a></p>
+            </div>
+        </div>
+      </div>
+
+      <div class="content-div">
+        <h2>elementary school</h2>
+        <!-- <p>I am an amateur photographer, and I study photography in my free time. Use the links at the left of the page to view my projects.</p> -->
+
+        <div class="carousel">
+          <div class="carousel-item">
+            <img class="carousel-img" src="../../assets/images/elementary-school/Ruane-1.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="../../assets/images/elementary-school/Ruane-2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="../../assets/images/elementary-school/Ruane-3.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="../../assets/images/elementary-school/Ruane-4.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="../../assets/images/elementary-school/Ruane-5.jpg">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;2024 Gavin Ruane. Site last updated September 2024.</p>
+    </footer>
+  </body>
+  <script>
+    var acc = document.querySelectorAll(".accordion-sub, .accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("carousel-item");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    } 
+  </script>
+</html>
